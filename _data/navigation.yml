@@ -1,9 +1,13 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+  - title: "CinemaNet"
+    url: /cinemanet/
+  - title: "Analyzer"
+    url: /analyzer/
+  - title: "Inspector"
+    url: /inspector/
+  - title: "SDK"
+    url: /sdk/  
+  - title: "Roadmap"
+    url: /roadmap/
+  - title: "Contribute"
+    url: /contribute/    
