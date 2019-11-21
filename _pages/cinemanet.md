@@ -105,7 +105,7 @@ label_rows:
 crowd_source:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/koyaanasquatsi/koyaanasquatsi_48.jpeg
     alt: "Crowd sourced data set"
-    excerpt: 'Cinemanet is an *ongoing* project to build an open, transparent data set and taxonomy around visual, cinematic, photographic and compositional concepts.<br /><br /> We know culture is a moving target - so we plan on releasing updated models as we grow our taxonomy, [fix bias](#bias-in-cinema), increase accuracy and add new concepts to the mix.'
+    excerpt: 'Cinemanet is an *ongoing* project to build an open, transparent library consisting of a data set and taxonomy around visual, cinematic, photographic and compositional concepts.<br /><br /> We know culture is a moving target - so we plan on releasing updated models as we grow our taxonomy, [fix bias](#bias-in-cinema), increase accuracy and add new concepts to the mix.'
     url: "#test-link"
     btn_label: "Sign up to crowd source"
     btn_class: "btn--inverse"
@@ -116,7 +116,6 @@ crowd_source:
 # Crowdsourced data set
 
 {% include feature_row id="crowd_source" type="left" %}
-
 
 # Label Groups / Taxonomy
 
@@ -132,13 +131,6 @@ The history of film is long, and often troublesome. Issues of respresentation, w
 
 *Thats a problem for any software that uses these models*.
 
-Help us address these issues by participating in our crowd sourced labeling project - and suggest new concepts, help provide  or over-looked tags.If you are interested in contributing - please check out our slack channel. We need your help! A diverse community of contributors is key to identifying problems and solutions.
+Help us address these issues by participating in our crowd sourced labeling project - and suggest new concepts, help provide  or over-looked tags. If you are interested in contributing - please [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) and participate in crowd sourcing. We need your help!
 
-# Pretained Models
-
-CinemaNet provides pre-trained models outside of just the SDK. If you are looking to target other platforms, or want to build custom solutions, our models suitable for realtime usage even on mobile. 
-
-Using Googles industry standard MobileNetV2 neural network architecture, we provide models in CoreML (.mlmodel), Keras (.h5), Tensorflow (.pb) formats as well as JSON.
-
-
-
+A diverse community of contributors is key to identifying problems and solutions.
