@@ -13,7 +13,7 @@ header:
 excerpt: "Open data set and models for common ML platforms"
 
 intro: 
-  - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - join our slack channel for info '
+  - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) for info '
 
 label_gallery:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
@@ -35,7 +35,7 @@ label_rows:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
     alt: "Color Key"
     title: "Color Key"
-    excerpt: "blue, green, luma, matte, na"
+    excerpt: "blue, green, luma, matte"
 
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/2046/2046_44.jpeg
     alt: "Color Saturation"
@@ -55,47 +55,47 @@ label_rows:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/blackkklansman/blackkklansman_4.jpeg
     alt: "Shot Angle"
     title: "Shot Angle"
-    excerpt: "aerial, eyelevel, high, low, na"
+    excerpt: "aerial, eyelevel, high, low"
 
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/moonlight/moonlight_10.jpeg
     alt: "Shot Focus"
     title: "Shot Focus"
-    excerpt: "shallow, out, deep, na"
+    excerpt: "shallow, out, deep"
 
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/natural-born-killers/natural-born-killers_32.jpeg
     alt: "Shot Framing"
     title: "Shot Framing"
-    excerpt: "closeup, extemelong, extremecloseup, long, medium, na"
+    excerpt: "closeup, extemelong, extremecloseup, long, medium"
 
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/natural-born-killers/natural-born-killers_34.jpeg
     alt: "Shot Level"
     title: "Shot Level"
-    excerpt: "tilted, level, na"
+    excerpt: "tilted, level"
     
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/blade-runner-2049/blade-runner-2049_41.jpeg
     alt: "Shot Lighting"
     title: "Shot Lighting"
-    excerpt: "hard, soft, neutral, key high, key low, silhouette, na"
+    excerpt: "hard, soft, neutral, key high, key low, silhouette"
 
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/koyaanasquatsi/koyaanasquatsi_39.jpeg
     alt: "Shot Location"
     title: "Shot Location"
-    excerpt: "exterior, interior, beach, canyon, exterior cave, desert, forest, glacier, lake, mountains, ocean, plains, polar, river, sky, space, wetlands, city, suburb, town, bridge, exterior airport, exterior auto.body, exterior castle, exterior hospital, exterior house of worship, exterior library, exterior mall, exterior office, exterior apartment, exterior house, exterior mansion, exterior monastery, exterior palace, exterior restaurant, exterior school, exterior skyscraper, exterior stadium, exterior station gas, exterior station subway, exterior station train, exterior store, exterior theater, exterior warehouse, bus stop, farm, exterior industrial, park, parkinglot, pier, playground, port, road, ruins, sidewalk, tunnel, exterior airplane, exterior bicycle, exterior boat, exterior bus, exterior car, exterior helicopter, exterior motorcycle, exterior spacecraft, exterior train, exterior truck, interior cave, interior airport, interior arena, interior auditorium, interior auto repair shop, interior bar, interior barn, interior cafe, interior cafeteria, interior command center, interior crypt, interior dancefloor, interior dungeon, interior elevator, interior factory, interior foyer, interior gym, interior hallway, interior hospital, interior houseofworship, interior lobby, interior mall, interior office, interior office cubicle, interior open office, interior prison, interior restaurant, interior bath, interior bed, interior class, interior closet, interior conference, interior court, interior dining, interior kitchen, interior kitchen.commercial, interior living, interior study, interior throne, interior stage, interior stairwell, interior station.bus, interior station fire, interior station police, interior station subway, interior station train, interior store, interior store aisle, interior store checkout, interior warehouse, interior airplane cabin, interior airplane cockpit, interior boat, interior bus, interior car, interior helicopter, interior spacecraft, interior subway, interior train, interior truck, na"
+    excerpt: "exterior, interior, beach, canyon, exterior cave, desert, forest, glacier, lake, mountains, ocean, plains, polar, river, sky, space, wetlands, city, suburb, town, bridge, exterior airport, exterior auto.body, exterior castle, exterior hospital, exterior house of worship, exterior library, exterior mall, exterior office, exterior apartment, exterior house, exterior mansion, exterior monastery, exterior palace, exterior restaurant, exterior school, exterior skyscraper, exterior stadium, exterior station gas, exterior station subway, exterior station train, exterior store, exterior theater, exterior warehouse, bus stop, farm, exterior industrial, park, parkinglot, pier, playground, port, road, ruins, sidewalk, tunnel, exterior airplane, exterior bicycle, exterior boat, exterior bus, exterior car, exterior helicopter, exterior motorcycle, exterior spacecraft, exterior train, exterior truck, interior cave, interior airport, interior arena, interior auditorium, interior auto repair shop, interior bar, interior barn, interior cafe, interior cafeteria, interior command center, interior crypt, interior dancefloor, interior dungeon, interior elevator, interior factory, interior foyer, interior gym, interior hallway, interior hospital, interior houseofworship, interior lobby, interior mall, interior office, interior office cubicle, interior open office, interior prison, interior restaurant, interior bath, interior bed, interior class, interior closet, interior conference, interior court, interior dining, interior kitchen, interior kitchen.commercial, interior living, interior study, interior throne, interior stage, interior stairwell, interior station.bus, interior station fire, interior station police, interior station subway, interior station train, interior store, interior store aisle, interior store checkout, interior warehouse, interior airplane cabin, interior airplane cockpit, interior boat, interior bus, interior car, interior helicopter, interior spacecraft, interior subway, interior train, interior truck"
 
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/a-tale-of-two-sisters/a-tale-of-two-sisters_62.jpeg
     alt: "Shot Subject"
     title: "Shot Subject"
-    excerpt: "animal, location, object, person, body, face, feet, hands, text, na"
+    excerpt: "animal, location, object, person, body, face, feet, hands, text"
 
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/away-we-go/away-we-go_26.jpeg
     alt: "Shot Time Of Day"
     title: "Shot Time Of Day"
-    excerpt: "day, night, twilight, na"
+    excerpt: "day, night, twilight"
 
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/sorry-to-bother-you/sorry-to-bother-you_59.jpeg
     alt: "Shot Type"
     title: "Shot Type"
-    excerpt: "portrait, twoshot, master, over the shoulder, na"
+    excerpt: "portrait, twoshot, master, over the shoulder"
 
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/kill-bill-vol-1/kill-bill-vol-1_16.jpeg
     alt: "Texture"
