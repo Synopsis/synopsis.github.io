@@ -154,6 +154,8 @@ The history of film is long, and often troublesome. Issues of respresentation, w
 
 *That's a problem for any software that uses these models*.
 
-Help us address these issues by participating in our crowd sourced labeling project - and suggest new concepts, help provide  or over-looked tags. If you are interested in contributing - please [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) and participate in crowd sourcing. We need your help!
+But film, like any art, seeks to tell stories, express ideas, and challenge us. Cinema shows us different points of view, some times shocks us, scares, makes us laugh, squeam, cheer, or wish we werent watching this particular scene with our parents.
+
+Help us address these concerns by participating in our crowd sourced labeling project - and suggest new concepts, help provide  or over-looked tags. If you are interested in contributing - please [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) and participate in crowd sourcing. We need your help!
 
 A diverse community of contributors is key to identifying problems and solutions.
