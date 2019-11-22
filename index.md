@@ -14,13 +14,13 @@ intro:
   - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) for info'
 
 outro: 
-  - excerpt: 'Synopsis is built with love by [Anton Marini](http://vade.info) for the media and technology community, with major support from [Vidvox](http://vidvox.net). <br /><br />If Synopsis is useful to you - please support out project by donating.'
+  - excerpt: 'Synopsis is built with love by [Anton Marini](http://vade.info), with major support from [Vidvox](http://vidvox.net). <br /><br />If Synopsis is useful to you - please support out project by [contributing](contribute).'
 
 about:
   - image_path: /assets/images/Icon-512.png
     alt: "Synopsis"
     title: "Synopsis"
-    excerpt: "Synopsis is a suite of open source software for computational cinematography - tools that help the creation of visual media.<br /><br /> Synopsis is built to help editors, artists, indie film makers, a/v developers and folks do what they do best - tell stories and build amazing tools.  Synopsis is not an automation tool - its built for creators, not to replace them."
+    excerpt: "Synopsis is a suite of open source software for computational cinematography - tools that help the creation of visual media.<br /><br />Synopsis is built to help editors, artists, indie film makers, a/v developers and creators do what they do best - tell stories, make experiences and build amazing tools.<br /><br />Synopsis is not an automation tool - its made by creators for creators, not to replace them."
 
 cinemanet:
   - image_path: /assets/images/CinemaNet-1.png
@@ -47,7 +47,7 @@ inspector:
     alt: "Synopsis Inspector"
     title: "Synopsis Inspector"
     excerpt: 'Synopsis Inspector is a next generation smart media manager. Synopsis Inspector auto-discovers analyzed files on your system or locally attached drives, and lets you filter, sort, 
-    search and compare media, explore analyzed metadata, and features new UI paradigms like interactive visual similarity and content clustering.<br /><br />Find and explore content visually and intuitively'
+    search and compare media, explore analyzed metadata, and features new UI paradigms like interactive visual similarity and content clustering.<br /><br />Find and explore content visually and intuitively.'
     url: "inspector"
     btn_label: "Learn More about Inspector"
     btn_class: "btn--inverse"
@@ -64,15 +64,15 @@ sdk:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row id="about" type="center" %}
+{% include feature_row id="about" type="left" %}
 
-{% include feature_row id="cinemanet" type="left" %}
+{% include feature_row id="cinemanet" type="right" %}
 
-{% include feature_row id="analyzer" type="right" %}
+{% include feature_row id="analyzer" type="left" %}
 
-{% include feature_row id="inspector" type="left" %}
+{% include feature_row id="inspector" type="right" %}
 
-{% include feature_row id="sdk" type="right" %}
+{% include feature_row id="sdk" type="left" %}
 
 {% include feature_row id="outro" type="center" %}
 
