@@ -152,7 +152,7 @@ CinemaNet is inspired by the language of the art of cinema. Terminology from scr
 
 The history of film is long, and often troublesome. Issues of respresentation, who gets leading roles, and shifting cultural norms are hugely problematic for historical data sets like ours. Because older films contain now outdated "norms" (racism, sexism, cultural sterotyping - the list goes on and on) - our data set will inherently contain these biases - and any models trained on them if not carefully reviewed may contain them as well. 
 
-*Thats a problem for any software that uses these models*.
+*That's a problem for any software that uses these models*.
 
 Help us address these issues by participating in our crowd sourced labeling project - and suggest new concepts, help provide  or over-looked tags. If you are interested in contributing - please [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) and participate in crowd sourcing. We need your help!
 
