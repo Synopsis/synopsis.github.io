@@ -148,6 +148,7 @@ intro:
 </style>
 
 {% include feature_row id="intro" type="center" %}
+
 <center><h1>Roadmap</h1></center>
 <div class="timeline">
   <div class="container left">

@@ -12,23 +12,31 @@ header:
 excerpt: "Open data set and models for common ML platforms"
 
 intro: 
-  - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) for info '
+  - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) for info'
 
-label_gallery:
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/2046/2046_44.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/amelie/amelie_48.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/sakuran/sakuran_43.jpeg
+gallery:
+
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/blackkklansman/blackkklansman_4.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/moonlight/moonlight_10.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/natural-born-killers/natural-born-killers_32.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/natural-born-killers/natural-born-killers_34.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/blade-runner-2049/blade-runner-2049_41.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/koyaanasquatsi/koyaanasquatsi_39.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/a-tale-of-two-sisters/a-tale-of-two-sisters_62.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/away-we-go/away-we-go_26.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/sorry-to-bother-you/sorry-to-bother-you_59.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/kill-bill-vol-1/kill-bill-vol-1_16.jpeg
+    url: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/blackkklansman/blackkklansman_4.jpeg
+    alt: "Possible tags: Exterior, Long, High Angle, Person, Sidewalk, Day, Deep Focus, Warm tones"
+    title: "Possible tags: Exterior, Long, High Angle, Person, Sidewalk, Day, Deep Focus, Warm tones"
+
+  - url: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/moonlight/moonlight_10.jpeg
+    image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/moonlight/moonlight_10.jpeg
+    alt: "Possible tags: Exterior, Close up, Eye level, Face, Person, Day, Shallow Focus, Cool tones"
+    title: "Possible tags: Exterior, Close up, Eye level, Face, Person, Day, Shallow Focus, Cool tones"
+
+  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/pulp-fiction/pulp-fiction_3.jpeg
+    url: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/pulp-fiction/pulp-fiction_3.jpeg
+    alt: "Possible tags: Exterior, Medum, Two Shot, Low, Person, Day, Cool Tones"
+    title: "Possible tags: Exterior, Medum, Two Shot, Low, Person, Day, Cool Tones"
+
+  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/i-origins/i-origins_3.jpeg
+    url: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/i-origins/i-origins_3.jpeg
+    alt: "Possible tags: Extreme Close Up, Person, Face, High Key Lighting"
+    title: "Possible tags: Extreme Close Up, Person, Face, High Key Lighting"
+
+    
 
 label_rows:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
@@ -110,25 +118,37 @@ crowd_source:
     btn_class: "btn--inverse"
 ---
 
-
 {% include feature_row id="intro" type="center" %}
 
-# Crowdsourced data set
 
-{% include feature_row id="crowd_source" type="left" %}
+# What is CinemaNet?
 
-# Label Groups / Taxonomy
+CinemaNet is a neural network as well as a library of data sets of cinematic and visual concepts.
+
+CinemaNet understands your video using the same language you might use: "an interior, close up shot in a bedroom, with shallow depth of field, of a person, in a thats softly and warmly lit, at night"
+
+CinemaNet can do this because its been trained on a taxonomy of concepts and examples of all types of interiors and exteriors, locations, focal lengths, times of day, subjects, and so on.
+
+Those concepts and more - along with data sets that represent those concepts are combined to make a neural network model that powers Synopsis. Thats CinemaNet.
+
+# Taxonomy
 
 CinemaNet is inspired by the language of the art of cinema. Terminology from screen writing, cinematography and photography, editing, and visual composition inform the taxonomy. Currently 14 conceptual groups with over 200 concepts in total make up prediction classes our model.
 
-For example, 
+{% include gallery %}
 
-{% include gallery id="label_gallery"  %}
-
+<p>
 <center><a href="taxonomy" class="btn btn--inverse">Explore the taxonomy</a></center>
+<br />
+<br />
+</p>
+
+# Crowdsourcing
+
+{% include feature_row id="crowd_source" type="left" %}
 
 
-# Bias in cinema
+# About bias
 
 The history of film is long, and often troublesome. Issues of respresentation, who gets leading roles, and shifting cultural norms are hugely problematic for historical data sets like ours. Because older films contain now outdated "norms" (racism, sexism, cultural sterotyping - the list goes on and on) - our data set will inherently contain these biases - and any models trained on them if not carefully reviewed may contain them as well. 
 

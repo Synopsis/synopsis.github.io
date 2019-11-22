@@ -1,5 +1,5 @@
 ---
-permalink: /taxonomy/
+permalink: /cinemanet/taxonomy/
 title: "CinemaNet Taxonomy"
 layout: splash
 header:

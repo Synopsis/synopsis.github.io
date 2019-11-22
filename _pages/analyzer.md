@@ -15,7 +15,7 @@ intro:
   - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) for info'
 ---
 
-More Info Soon
+{% include feature_row id="intro" type="center" %}
 
 Synopsis Analyzer is a super powered video encoder that can optionally analyze your video and add metadata.
 
@@ -53,7 +53,11 @@ Even when runningexpensive machine learning analysis per frame, Analyzer beats o
 
 Dont want to use all that horsepower? Manage how many concurrent encoding operations run on on the fly. 
 
-# Watch Folders
+# Organized
+
+Analyzer can process entire folder structures. Want to update your media library? Drag the top level folder in and Analyzer will suss it all out.
+
+Manage output destinations (including entire folder structures) or  
 
 Automate encode and analysis by using watch folders - any added media files are recusrivly discovered and automatically enqued for analysis. You can set up output destination folders, and even use remote file systems. Analyzer can will even copy non media items to output folders, to help automate any workflows you need.
 
