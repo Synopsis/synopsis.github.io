@@ -17,9 +17,9 @@ intro:
 
 {% include feature_row id="intro" type="center" %}
 
-Synopsis Analyzer is a super powered video encoder that can optionally analyze your video and add metadata.
+Synopsis Analyzer is a super powered video encoder that can analyze your video and add metadata.
 
-# Mega Metadata.
+# Mega Metadata
 
 Analyzer uses CinemaNet to add global and per frame metadata to your content. 
 
@@ -31,7 +31,7 @@ Metadata added to your files is compressed using industry standard zstd format f
 
 # Video and Audio Encoding
 
-Synopsis Analyzer outputs industustry standard Quicktime media files, and can ingest MFX media as well. Stay tuned for more container and codec support in the future.
+Synopsis Analyzer outputs industry standard Quicktime media files, and can ingest MFX media as well. Stay tuned for more container and codec support in the future.
 
 * Passthrough (analysis only, your media files are not re-encoded for zero generational loss)
 * Uncompressed
@@ -45,11 +45,11 @@ Synopsis Analyzer outputs industustry standard Quicktime media files, and can in
 * MPEG IMX
 * HAP and HAP-Q
 
-# Not embarrased to be embarassingly parallel
+# Embarassingly Parallel
 
-Analyzer is multi threaded for video encoding and decoding and GPU Accelerated for analysis using Metal and CoreML. Use all of your available horse power, including all CPU cores and all available GPUs, even external. Analyzer even targets appropriate device encoders and decoders, trying to manage expensive PCI transfers for video frames. 
+Analyzer is multi-threaded for video encoding and decoding and GPU Accelerated for analysis using Metal and CoreML. Use all of your available horsepower, including all CPU cores and all available GPUs, even external. Analyzer even targets appropriate device encoders and decoders, trying to manage expensive PCI transfers for video frames. 
 
-Even when runningexpensive machine learning analysis per frame, Analyzer beats out Apple's Compressor and Adobe Media Encoder in transcoding tasks.
+Even when running expensive machine learning analysis per frame, Analyzer beats out Apple's Compressor and Adobe Media Encoder in transcoding tasks.
 
 Dont want to use all that horsepower? Manage how many concurrent encoding operations run on on the fly. 
 
@@ -61,6 +61,6 @@ Manage output destinations (including entire folder structures) or
 
 Automate encode and analysis by using watch folders - any added media files are recusrivly discovered and automatically enqued for analysis. You can set up output destination folders, and even use remote file systems. Analyzer can will even copy non media items to output folders, to help automate any workflows you need.
 
-# Scripting
+# Import Python
 
-Run custom python scripts on the completion of an analysis session or per file completion. Want to add your video files metadata to a data base? Copy files to remote servers? Automatically trigger actions? Analyzer's python scripting can help you. Coming soon.
+Run custom Python scripts on the completion of an analysis session or per file completion. Want to add your video files metadata to a data base? Copy files to remote servers? Automatically trigger actions? Analyzer's Python scripting can help you. Coming soon.
