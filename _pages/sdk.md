@@ -17,12 +17,12 @@ intro:
 
 {% include feature_row id="intro" type="center" %}
 
-Synopsis Framework powers Analyzer and Inspector, and lets your apps:
+Synopsis Framework powers Analyzer and Inspector and lets your apps:
 
-* Read metadata generated from Analyzer or other tools implementing the Synopsis metadata spec.
+* Read metadata generated from Analyzer or other tools implementing Synopsis metadata specification.
 * Analyze media to generate new metadata
 * Write metadata using our metadata codec
-* Use extended file system attributes to make media files spotlight friendly
+* Use extended file system attributes to make media files Spotlight friendly
 * Mathematically compare metadata using various metrics
 * Tools to build novel next generation smart media UIs
 * Provides standard UI components to display metadata

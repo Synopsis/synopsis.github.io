@@ -19,6 +19,8 @@ intro:
 
 Synopsis Analyzer is a super powered video encoder that can analyze your video and add metadata.
 
+{% include figure image_path="/assets/images/Analyzer-2.png" alt="Synopsis Analyzer" %}
+
 # Mega Metadata
 
 Analyzer uses CinemaNet to add global and per frame metadata to your content. 
@@ -27,7 +29,7 @@ What does that mean? Analyzer creates visual fingerprints of of every frame of y
 
 Analyzer also creates an aggregate global fingerprint to identify the entire content of your media - a Synopsis (get it?) - allowing quick search, comparison, filtering and comparison of media. No side car files to manage or get lost.  
 
-Metadata added to your files is compressed using industry standard zstd format for speed and file size. You can optionally export sidecar JSON metadata should you need it.
+Metadata added to your files is compressed using industry standard [ZStandard](https://facebook.github.io/zstd/) format for speed and optimal file size. You can also export sidecar JSON metadata should you need it.
 
 # Video and Audio Encoding
 
@@ -47,10 +49,10 @@ Synopsis Analyzer outputs industry standard Quicktime media files, and can inges
 
 # Embarassingly Parallel
 
-Analyzer is multi-threaded for video encoding and decoding and GPU Accelerated for analysis using Metal and CoreML. Use all of your available horsepower, including all CPU cores and all available GPUs, even external. Analyzer even targets appropriate device encoders and decoders, trying to manage expensive PCI transfers for video frames. 
+![image-left](/assets/images/cpu.png){: .align-left} ![image-left](/assets/images/gpu.png){: .align-left} Analyzer is multi-threaded for video encoding and decoding and GPU Accelerated for analysis using Metal and CoreML. Use all of your available horsepower, including all CPU cores and all available GPUs, even external. Analyzer even targets appropriate device encoders and decoders, trying to manage expensive PCI transfers for video frames.
 
-Even when running expensive machine learning analysis per frame, Analyzer beats out Apple's Compressor and Adobe Media Encoder in transcoding tasks.
-
+<!-- Even when running expensive machine learning analysis per frame, Analyzer beats out Apple's Compressor and Adobe Media Encoder in transcoding tasks.
+ -->
 Dont want to use all that horsepower? Manage how many concurrent encoding operations run on on the fly. 
 
 # Organized

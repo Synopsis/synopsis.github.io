@@ -129,7 +129,7 @@ CinemaNet understands your video using the same language you might use: "an inte
 
 CinemaNet can do this because its been trained on a taxonomy of concepts and examples of all types of interiors and exteriors, locations, focal lengths, times of day, subjects, and so on.
 
-Those concepts and more - along with data sets that represent those concepts are combined to make a neural network model that powers Synopsis. Thats CinemaNet.
+The taxonomy along with data sets of examples that represent it are combined to make a neural network model that powers Synopsis. Thats CinemaNet.
 
 # Taxonomy
 
@@ -148,7 +148,7 @@ CinemaNet is inspired by the language of the art of cinema. Terminology from scr
 {% include feature_row id="crowd_source" type="left" %}
 
 
-# About bias
+# About Bias
 
 The history of film is long, and often troublesome. Issues of respresentation, who gets leading roles, and shifting cultural norms are hugely problematic for historical data sets like ours. Because older films contain now outdated "norms" (racism, sexism, cultural sterotyping - the list goes on and on) - our data set will inherently contain these biases - and any models trained on them if not carefully reviewed may contain them as well. 
 
