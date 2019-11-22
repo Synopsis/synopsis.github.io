@@ -135,7 +135,7 @@ The taxonomy along with data sets of examples that represent it are combined to 
 
 CinemaNet is inspired by the language of the art of cinema. Terminology from screen writing, cinematography and photography, editing, and visual composition inform the taxonomy. Currently 14 conceptual groups with over 200 concepts in total make up prediction classes our model.
 
-{% include gallery %}
+{% include gallery layout="half" %}
 
 <p>
 <center><a href="taxonomy" class="btn btn--inverse">Explore the taxonomy</a></center>
