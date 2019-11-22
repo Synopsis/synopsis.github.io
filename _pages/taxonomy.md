@@ -1,6 +1,6 @@
 ---
-permalink: /cinemanet/
-title: "CinemaNet"
+permalink: /taxonomy/
+title: "CinemaNet Taxonomy"
 layout: splash
 header:
   overlay_color: "#000"
@@ -9,6 +9,7 @@ header:
   actions:
     - label: "CinemaNet Github"
       url: "https://github.com/Synopsis/CinemaNet"
+
 excerpt: "Open data set and models for common ML platforms"
 
 intro: 
@@ -101,39 +102,14 @@ label_rows:
     title: "Texture"
     excerpt: "banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged"
 
-crowd_source:
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/koyaanasquatsi/koyaanasquatsi_48.jpeg
-    alt: "Crowd sourced data set"
-    excerpt: 'Cinemanet is an *ongoing* project to build an open, transparent library consisting of a data set and taxonomy around visual, cinematic, photographic and compositional concepts.<br /><br /> We know culture is a moving target - so we plan on releasing updated models as we grow our taxonomy, [fix bias](#bias-in-cinema), increase accuracy and add new concepts to the mix.'
-    url: "#test-link"
-    btn_label: "Sign up to crowd source"
-    btn_class: "btn--inverse"
 ---
 
-
-{% include feature_row id="intro" type="center" %}
-
-# Crowdsourced data set
-
-{% include feature_row id="crowd_source" type="left" %}
 
 # Label Groups / Taxonomy
 
 CinemaNet is inspired by the language of the art of cinema. Terminology from screen writing, cinematography and photography, editing, and visual composition inform the taxonomy. Currently 14 conceptual groups with over 200 concepts in total make up prediction classes our model.
 
-For example, 
+The taxonomy currently consists of:
 
-{% include gallery id="label_gallery"  %}
+{% include feature_row id="label_rows"  %}
 
-<center><a href="taxonomy" class="btn btn--inverse">Explore the taxonomy</a></center>
-
-
-# Bias in cinema
-
-The history of film is long, and often troublesome. Issues of respresentation, who gets leading roles, and shifting cultural norms are hugely problematic for historical data sets like ours. Because older films contain now outdated "norms" (racism, sexism, cultural sterotyping - the list goes on and on) - our data set will inherently contain these biases - and any models trained on them if not carefully reviewed may contain them as well. 
-
-*Thats a problem for any software that uses these models*.
-
-Help us address these issues by participating in our crowd sourced labeling project - and suggest new concepts, help provide  or over-looked tags. If you are interested in contributing - please [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) and participate in crowd sourcing. We need your help!
-
-A diverse community of contributors is key to identifying problems and solutions.

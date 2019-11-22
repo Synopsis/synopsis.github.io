@@ -27,9 +27,10 @@ cinemanet:
     alt: "CinemaNet"
     title: "CinemaNet"
     excerpt: "CinemaNet is the open source library of over 200 visual, cinematic, photographic and compositional concepts that powers Synopsis's machine learning engine.<br /><br />CinemaNet is crowd sourced - contribute and evolve the taxonomy."
-    url: "#test-link"
+    url: "cinemanet"
     btn_label: "Learn More about CinemaNet"
     btn_class: "btn--inverse"
+
 
 analyzer:
   - image_path: /assets/images/Analyzer-1.png
@@ -37,7 +38,7 @@ analyzer:
     title: "Synopsis Analyzer"
     excerpt: 'Synopsis Analyzer is an industrial grade video encoder and analysis tool for macOS. Analyzer ingests compatible media files and embeds metadata to them - without easy to lose sidecar files - making them searchable, comparable, sortable, and smart, all while being Quicktime compliant.<br /><br/> Did we mention Spotlight integration?'
 
-    url: "#test-link"
+    url: "analyzer"
     btn_label: "Learn More about Analyzer"
     btn_class: "btn--inverse"
 
@@ -47,7 +48,7 @@ inspector:
     title: "Synopsis Inspector"
     excerpt: 'Synopsis Inspector is a next generation smart media manager. Synopsis Inspector auto-discovers analyzed files on your system or locally attached drives, and lets you filter, sort, 
     search and compare media, explore analyzed metadata, and features new UI paradigms like interactive visual similarity and content clustering.<br /><br />Find and explore content visually and intuitively'
-    url: "#test-link"
+    url: "inspector"
     btn_label: "Learn More about Inspector"
     btn_class: "btn--inverse"
 
@@ -56,7 +57,7 @@ sdk:
     alt: "SDK"
     title: "SDK"
     excerpt: 'Want to add media intelligence to your macOS or iOS applications? The Synopsis SDK can help.<br /><br /> Synopsis Analyzer and Inspector are both built using the Synopsis SDK, a macOS and iOS Objective-C framework that features metadata analysis, archiving, encoding and decoding to compatible Quicktime files, as well as metadata comparison, sorting and similarity functionality.'
-    url: "#test-link"
+    url: "sdk"
     btn_label: "Learn More about our SDK"
     btn_class: "btn--inverse"    
 ---

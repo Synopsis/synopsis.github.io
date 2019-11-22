@@ -9,7 +9,7 @@ header:
   actions:
     - label: "Github"
       url: "https://github.com/Synopsis"
-excerpt: "next steps"
+excerpt: "Next steps"
 
 intro: 
   - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) for info'
@@ -31,7 +31,7 @@ intro:
   content: '';
   position: absolute;
   width: 4px;
-  background-color: white;
+  background-color: lightgray;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -53,8 +53,8 @@ intro:
   width: 14px;
   height: 14px;
   right: -10px;
-  background-color: white;
-  border: 4px solid white;
+  background-color: lightgray;
+  border: 4px solid lightgray;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -79,9 +79,9 @@ intro:
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid lightgray;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent lightgray;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -93,9 +93,9 @@ intro:
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid lightgray;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent lightgray transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -106,8 +106,8 @@ intro:
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
-  border: 1px solid white;
+  background-color: lightgray;
+  border: 1px solid lightgray;
   position: relative;
   border-radius: 6px;
   color: #494e52;
@@ -132,7 +132,7 @@ intro:
   left: 60px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent lightgray transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
@@ -147,7 +147,8 @@ intro:
 }
 </style>
 
-
+{% include feature_row id="intro" type="center" %}
+<center><h1>Roadmap</h1></center>
 <div class="timeline">
   <div class="container left">
     <div class="content">
