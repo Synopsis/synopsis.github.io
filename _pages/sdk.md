@@ -19,6 +19,40 @@ intro:
 
 Synopsis Framework powers Analyzer and Inspector and lets your apps:
 
+<!-- {% highlight objectivec %}
+- (void)metadataOutput:(AVPlayerItemMetadataOutput *)output didOutputTimedMetadataGroups:(NSArray *)groups fromPlayerItemTrack:(AVPlayerItemTrack *)track
+{
+    NSMutableDictionary* metadataDictionary = [NSMutableDictionary dictionary];
+    
+    for(AVTimedMetadataGroup* group in groups)
+    {
+        for(AVMetadataItem* metadataItem in group.items)
+        {
+            NSString* key = metadataItem.identifier;
+            
+            if ([key isEqualToString:kSynopsisMetadataIdentifier])
+            {
+                id metadata = [self.metadataDecoder decodeSynopsisMetadata:metadataItem];
+                if(metadata)
+                {
+                    [metadataDictionary setObject:metadata forKey:key];
+                }
+            }
+            else
+            {
+                id value = metadataItem.value;
+                [metadataDictionary setObject:value forKey:key];
+            }
+        }
+    }
+    
+    if(self.metadataInspector && metadataDictionary)
+    {
+        [self.metadataInspector setFrameMetadata:metadataDictionary];
+    }
+}
+{% endhighlight %} -->
+
 * Read metadata generated from Analyzer or other tools implementing Synopsis metadata specification.
 * Analyze media to generate new metadata
 * Write metadata using our metadata codec

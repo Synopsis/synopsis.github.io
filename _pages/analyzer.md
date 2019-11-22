@@ -31,9 +31,10 @@ Analyzer also creates an aggregate global fingerprint to identify the entire con
 
 Metadata added to your files is compressed using industry standard [ZStandard](https://facebook.github.io/zstd/) format for speed and optimal file size. You can also export sidecar JSON metadata should you need it.
 
-# Video and Audio Encoding
 
-Synopsis Analyzer outputs industry standard Quicktime media files, and can ingest MFX media as well. Stay tuned for more container and codec support in the future.
+# Pro Video and Audio Encoding
+
+![image-left](/assets/images/Analyzer-Prefs.png){: .align-left} Synopsis Analyzer outputs industry standard Quicktime media files, and can ingest MFX media as well. Use our built in presets or make your own. Stay tuned for more container and codec support in the future. 
 
 * Passthrough (analysis only, your media files are not re-encoded for zero generational loss)
 * Uncompressed
@@ -59,9 +60,12 @@ Dont want to use all that horsepower? Manage how many concurrent encoding operat
 
 Analyzer can process entire folder structures. Want to update your media library? Drag the top level folder in and Analyzer will suss it all out.
 
-Manage output destinations (including entire folder structures) or  
+Manage output destinations (including entire folder structures) or let analyzer place files next to originals.
 
-Automate encode and analysis by using watch folders - any added media files are recusrivly discovered and automatically enqued for analysis. You can set up output destination folders, and even use remote file systems. Analyzer can will even copy non media items to output folders, to help automate any workflows you need.
+
+# Watch Folders 
+
+Automate encode and analysis by using watch folders - any supported media files are recursively discovered and automatically enqued for analysis. You can set up output destination folders, and even use remote file systems. Analyzer can will even copy non media items to output folders, to help automate any workflows you need.
 
 # Import Python
 
