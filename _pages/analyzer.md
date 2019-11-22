@@ -23,7 +23,7 @@ Synopsis Analyzer is a super powered video encoder that can optionally analyze y
 
 Analyzer uses CinemaNet to add global and per frame metadata to your content. 
 
-What does that mean? Analyzer creates a multiple frame fingerprints of your content - like a video bar code or unique visual id - and embeds these fingerprints in a standard Quicktime metadata track right along your video and audio. 
+What does that mean? Analyzer creates visual fingerprints of of every frame of your content - like a video bar code or unique visual id - and embeds these fingerprints in a standard Quicktime metadata track right along your video and audio. 
 
 Analyzer also creates an aggregate global fingerprint to identify the entire content of your media - a Synopsis (get it?) - allowing quick search, comparison, filtering and comparison of media. No side car files to manage or get lost.  
 
@@ -33,7 +33,7 @@ Metadata added to your files is compressed using industry standard zstd format f
 
 Synopsis Analyzer outputs industustry standard Quicktime media files, and can ingest MFX media as well. Stay tuned for more container and codec support in the future.
 
-* Passthrough (analysis only, your media files are not re-encoded for no generational loss)
+* Passthrough (analysis only, your media files are not re-encoded for zero generational loss)
 * Uncompressed
 * ProRes 
 * AVC-Intra

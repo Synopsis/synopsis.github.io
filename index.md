@@ -20,7 +20,7 @@ about:
   - image_path: /assets/images/Icon-512.png
     alt: "Synopsis"
     title: "Synopsis"
-    excerpt: "Synopsis is a suite of open source software for computational cinematography - tools that help creatively augment the production of films and film like experiences.<br /><br /> Synopsis is built to help editors, artists, indy film makers, media developers and folks passionate about the intersection of media and technology."
+    excerpt: "Synopsis is a suite of open source software for computational cinematography - tools that help the creation of visual media.<br /><br /> Synopsis is built to help editors, artists, indie film makers, a/v developers and folks do what they do best - tell stories and build amazing tools.  Synopsis is not an automation tool - its built for creators, not to replace them."
 
 cinemanet:
   - image_path: /assets/images/CinemaNet-1.png
