@@ -150,7 +150,7 @@ CinemaNet is inspired by the language of the art of cinema. Terminology from scr
 
 # About Bias
 
-The history of film is long, and often troublesome. Issues of respresentation, who gets leading roles, and shifting cultural norms are hugely problematic for historical data sets like ours. Because older films contain now outdated "norms" (racism, sexism, cultural sterotyping - the list goes on and on) - our data set will inherently contain these biases - and any models trained on them if not carefully reviewed may contain them as well. 
+The history of film is long, and often troublesome. Issues of respresentation, who gets leading roles, and shifting cultural norms are hugely problematic for historical data sets like ours. Because older films contain now outdated tactless tropes (racism, sexism, cultural sterotyping - the list goes on and on) - our data set will inherently contain these biases - and any models trained on them if not carefully reviewed may contain them as well. 
 
 *That's a problem for any software that uses these models*.
 
