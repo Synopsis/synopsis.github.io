@@ -113,7 +113,7 @@ crowd_source:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/koyaanasquatsi/koyaanasquatsi_48.jpeg
     alt: "Crowd sourced data set"
     excerpt: 'Cinemanet is an *ongoing* project to build an open, transparent library consisting of a data set and taxonomy around visual, cinematic, photographic and compositional concepts.<br /><br /> We know culture is a moving target - so we plan on releasing updated models as we grow our taxonomy, [fix bias](#bias-in-cinema), increase accuracy and add new concepts to the mix.'
-    url: "#test-link"
+    url: "crowdsource"
     btn_label: "Sign up to crowd source"
     btn_class: "btn--inverse"
 ---
