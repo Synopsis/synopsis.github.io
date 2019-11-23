@@ -19,11 +19,17 @@ intro:
 
 # Sign up
 
-Thanks for your interest in our crowdsourced labeling project to help make Synopsis more useful and accurate.
+Thanks for your interest!
 
-Were looking for a small starting cohort of diverse expert users. For example, are you a film maker, an editor, student, an ai researcher, media ethicist, developer, or just curious?  
+Were looking for a small starting cohort of users to help label, identify taxonomy issues, and offer ideas for new data sets. 
 
-Reach out!
+Are you a film maker, an editor, student, ai researcher, media ethicist, developer, or just curious? 
+
+We want to work closely with folks interested in Synopsis and making the tools, models and data sets more useful to more people. 
+
+Please note, our labeling data does represent international film from all eras, and all genres. There may be some nudity, violence, gore, or otherwise questionable material.
+
+Please note were looking on ways of not just making our models better, but the process of making our models better. Your input is invaluable.
 
 <form action="https://getsimpleform.com/messages?form_api_token=8aa99faa61f5f14b9493afe87f22cc29" method="post">
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
