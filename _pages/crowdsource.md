@@ -35,7 +35,7 @@ Please note were looking on ways of not just making our models better, but the p
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <input type='hidden' name='redirect_to' value='http://synopsis.video/crowdsourcethankyou' />
   <!-- all your input fields here.... -->
-  <input type="email" name="email" placeholder="your email" required/> 
+  <input type="email" name="email" placeholder="Your email" required/> 
   <!-- <input type='text' name="Why" placeholder='Why youre interested in signing up' required/> -->
   <textarea name="info" placeholder="Why are you interested in signing up?"></textarea>
   <input type='submit' value='Submit' />
