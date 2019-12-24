@@ -16,7 +16,7 @@ intro:
   - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) for info '
 
 color_key_green:
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
+ - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
     alt: "Color Key Green"
     title: "Color Key Green"    
     excerpt: "Images containing a green screen / green color key"
