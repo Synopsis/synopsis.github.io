@@ -17,13 +17,25 @@ intro:
 
 color_key_green:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
-  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
     alt: "Color Key Green"
     title: "Color Key Green"    
     excerpt: "Images containing a green screen / green color key"
+  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
+    alt: "Color Key Green"
+    title: "Color Key Green"    
+    excerpt: "A different image containing a green screen / green color key"
+ - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
+    alt: "Color Key Green"
+    title: "Color Key Green"    
+    excerpt: "A totally different image containing a green screen / green color key"
+
+
 
 color_key_blue:
+  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/2046/2046_44.jpeg
+    alt: "Color Key Blue"
+    title: "Color Key Blue"
+    excerpt: "Images containing a blue screen / blue color key - this clearly needs to be updated!"
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/2046/2046_44.jpeg
     alt: "Color Key Blue"
     title: "Color Key Blue"
