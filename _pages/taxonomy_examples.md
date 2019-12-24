@@ -17,6 +17,8 @@ intro:
 
 color_key_green:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
+  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
+  - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
     alt: "Color Key Green"
     title: "Color Key Green"    
     excerpt: "Images containing a green screen / green color key"
