@@ -23,9 +23,9 @@ color_key_green:
 
 color_key_blue:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/2046/2046_44.jpeg
-    alt: "Color Saturation"
-    title: "Color Saturation"
-    excerpt: "Images containing a blue screen / blue color key"
+    alt: "Color Key Blue"
+    title: "Color Key Blue"
+    excerpt: "Images containing a blue screen / blue color key - this clearly needs to be updated!"
 
 
 ---
