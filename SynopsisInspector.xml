@@ -15,8 +15,8 @@
             <pubDate>Thurs, 27 Dec 2019 21:21:11 +0000</pubDate>
             <enclosure
             	url="https://www.vidvox.net/download/Synopsis_Inspector_1.0.0.zip"
-            	sparkle:version="1.0.0"
-            	sparkle:shortVersionString="1.0 beta 1"
+            	sparkle:version="0.8.0"
+            	sparkle:shortVersionString="Beta 1"
             	length="27646705"
             	type="application/octet-stream" />
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
