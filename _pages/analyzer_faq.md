@@ -53,5 +53,5 @@ By Default <a href="https://synopsis.video/analyzer/">Synopsis Analyzer</a> enco
 
 ***What does "Copy non media documents to output folder" do?***
 <p class="answer">
-  For some advanced workflows, it can be helpful to 
+For some workflows it may be necessary for any arbitrary 3rd party files to accompany analyzed media to the output folder. This can be helpful to move project files, LUTs, images, 3d assets and other files alongside analyzed video. 
 </p>
