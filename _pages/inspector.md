@@ -17,4 +17,14 @@ intro:
 
 {% include feature_row id="intro" type="center" %}
 
-More Info Soon
+
+{% include video id="382331711" provider="vimeo" %}
+
+# Smart Media Assistant
+
+Synopsis Inspector lets you browse, sort, compare, filter and find similar clips in an intuitive modern interface. You can use Inspector in conjunction with other applications to speed up clip selection, organize your content or find alternate takes of shots.
+
+
+
+
+
