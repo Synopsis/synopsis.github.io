@@ -6,18 +6,18 @@
         <language>en</language>
         
         <item>
-            <title>Version 1.0 (0 bugs fixed; initial release)</title>
+            <title>Public Beta 1.0</title>
             <description><![CDATA[
-				<h2>Nothing new!</h2>
-				<p>Initial upload...</p>
+                <h2>Public Beta 1</h2>
+                <p>Initial release...</p>
 			]]>
 			</description>
-            <pubDate>Thurs, 27 Dec 2019 21:21:11 +0000</pubDate>
+            <pubDate>Thurs, 2 Jan 2020 21:21:11 +0000</pubDate>
             <enclosure
-            	url="https://www.vidvox.net/download/Synopsis_Inspector_1.0.0.zip"
-            	sparkle:version="0.8.0"
-            	sparkle:shortVersionString="Beta 1"
-            	length="27646705"
+                url="https://synopsis.video/assets/sparkle_downloads/Synopsis Inspector 0.9.1.zip"
+                sparkle:version="0.9.1"
+                sparkle:shortVersionString="Public Beta 1"
+            	length="27701714"
             	type="application/octet-stream" />
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
         </item>
