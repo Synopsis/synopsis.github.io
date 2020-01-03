@@ -11,7 +11,7 @@ header:
 excerpt: "Open Source Computational Cinematography"
 
 intro: 
-  - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) for info'
+  - excerpt: '[Synopsis Public Beta 1](https://github.com/Synopsis/Synopsis-Inspector/releases) is available. Want to know more? - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ)'
 
 outro: 
   - excerpt: 'Synopsis is built with love by [Anton Marini](http://vade.info), with major support from [Vidvox](http://vidvox.net). <br /><br />If Synopsis is useful to you - please support out project by [contributing](contribute).'

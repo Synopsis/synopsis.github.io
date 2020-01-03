@@ -12,7 +12,7 @@ header:
 excerpt: "Industrial strength media encoder and analyzer for macOS"
 
 intro: 
-  - excerpt: 'Synopsis is currently under heavy development and in alpha phase. Want to know more - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ) for info'
+  - excerpt: '[Synopsis Public Beta 1](https://github.com/Synopsis/Synopsis-Inspector/releases) is available. Want to know more? - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ)'
 
 encoding:
   - image_path: "/assets/images/Analyzer-Prefs.png"
@@ -25,6 +25,9 @@ encoding:
 <!-- Synopsis Analyzer is a super powered video encoder that can analyze your video and add metadata. -->
 
 <!-- {% include figure image_path="/assets/images/Analyzer-2.png" alt="Synopsis Analyzer" %} -->
+
+<div align="center"><a href="https://github.com/Synopsis/Synopsis-Inspector/releases" class="btn btn--inverse btn--x-large">Download Synopsis Public Beta 1</a></div>
+<br />
 
 
 {% include video id="382329504" provider="vimeo" %}
