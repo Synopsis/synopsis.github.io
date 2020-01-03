@@ -154,7 +154,7 @@ intro:
   <div class="container left">
     <div class="content">
       <h2>Now</h2>
-       <p><b>Community building / Crowdsourcing</b></p>
+       <p><b>Public Beta 1</b></p>
 
       <p>Introduce Synopsis to a wider audience, build a small community. Vet the initial CinemaNet taxonomy, get feedback on concepts and bias concerns. Fine tune the models.</p>
     </div>
@@ -162,27 +162,20 @@ intro:
   <div class="container right">
     <div class="content">
       <h2>Soon</h2>
-      <p><b>Private Alpha</b></p>
-      <p>Share Analyzer and Inspector with our community in a limited fashion and fix any show stoppers.</p>
+      <p><b>Public Beta 2</b></p>
+      <p>Bug Fixes, performance enhancements, and add new features to Synopsis Analyzer (Python support), add new features to Inspector (Tokenized search, possibly clustered view)</p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
-      <h2>Soon-ish</h2>
-       <p><b>Private Beta</b></p>
-      <p>Polish Analyzer and Inspector for public release. </p>
+      <h2>Research Pt 1.</h2>
+       <p><b>New Taxonomies</b></p>
+      <p>Research time domain data sets suitable for Synopsis / CinemaNet. Expand machine learning model to provide more outputs (single shot detector bounding boxes for objects for example). Research audio classification.</p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>Later</h2>
-       <p><b>Public Beta</b></p>
-      <p>Release Betas of Analyzer and Inspector, and finalize 1.0 CinemaNet taxonomy. Lock features.</p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h2>Subsequently</h2>
+      <h2>Research Pt 2.</h2>
        <p><b>Community iteration</b></p>
       <p>Open crowd sourcing to a larger comminty and begin to iterate on taxonomy, and new concept groups.</p>
     </div>
