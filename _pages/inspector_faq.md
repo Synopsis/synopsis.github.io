@@ -31,7 +31,7 @@ intro:
 
 ***The description of my media is wrong***
 <p class="answer">
-Sorry about that! <a href="https://synopsis.video/analyzer/">Synopsis Analyzer</a> tries to predict (a fancy way of using statistics to guess) the right descriptions of your media. If we've gotten something wrong, <a href="https://github.com/Synopsis/Synopsis-Inspector/issues/new/choose">please report a bug</a>a>, and if possible, share the media file with us so we can teach the analyzer to be better! Analyzer learns by examples, and the more examples the better it will get.
+Sorry about that! <a href="https://synopsis.video/analyzer/">Synopsis Analyzer</a> tries to predict (a fancy way of using statistics to guess) the right descriptions of your media. If we've gotten something wrong, <a href="https://github.com/Synopsis/Synopsis-Inspector/issues/new/choose">please report a bug</a>, and if possible, share the media file with us so we can teach the analyzer to be better! Analyzer learns by examples, and the more examples the better it will get.
 
 If you want to help make Analyzer and Inspector the even better, <a href="https://synopsis.video/crowdsource/">sign up for crowd labelling</a> to seriously help us out!
 </p>
