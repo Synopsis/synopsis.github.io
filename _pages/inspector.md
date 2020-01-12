@@ -17,8 +17,12 @@ intro:
 
 {% include feature_row id="intro" type="center" %}
 
-<div align="center"><a href="https://github.com/Synopsis/Synopsis-Inspector/releases" class="btn btn--inverse btn--x-large">Download Synopsis Public Beta 1</a></div>
-<br />
+<div align="center"><a href="https://github.com/Synopsis/Synopsis-Inspector/releases" class="btn btn--inverse btn--x-large">Download Synopsis Public Beta 1</a>
+  <br />
+Requires macOS 10.13 or greater.
+
+</div>
+<br /><br />
 
 {% include video id="382331711" provider="vimeo" %}
 

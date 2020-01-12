@@ -26,7 +26,11 @@ encoding:
 
 <!-- {% include figure image_path="/assets/images/Analyzer-2.png" alt="Synopsis Analyzer" %} -->
 
-<div align="center"><a href="https://github.com/Synopsis/Synopsis-Inspector/releases" class="btn btn--inverse btn--x-large">Download Synopsis Public Beta 1</a></div>
+<div align="center"><a href="https://github.com/Synopsis/Synopsis-Inspector/releases" class="btn btn--inverse btn--x-large">Download Synopsis Public Beta 1</a>
+  <br />
+Requires macOS 10.13 or greater.
+
+</div>
 <br />
 
 
