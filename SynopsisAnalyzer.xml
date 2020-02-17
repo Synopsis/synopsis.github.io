@@ -27,13 +27,13 @@
                 <h2>Public Beta 2</h2>
                 <p>New features, optimizations and bug fixes</p>
                 <ul>
-                <li>Fixed a bug where certain Quicktime files would be ignored by Synopsis Inspector if the video was decodable, but determined not to be playable in realtime by the system. Now all decodable video is able to be analyzed and transcoded.</li>
+                <li>Fixed a bug where certain Quicktime files would be ignored by Synopsis Analyzer if the video was decodable, but determined not to be playable in realtime by the system. Now all decodable video is able to be analyzed and transcoded.</li>
                 </ul>
             ]]>
             </description>
             <pubDate>Saturday, Feb 15 2020 21:21:11 +0000</pubDate>
             <enclosure
-                url="https://synopsis.video/assets/sparkle_downloads/Synopsis Inspector 0.9.2.zip"
+                url="https://synopsis.video/assets/sparkle_downloads/Synopsis Analyzer 0.9.2.zip"
                 sparkle:version="0.9.2"
                 sparkle:shortVersionString="Public Beta 2"
                 length="25010331"
