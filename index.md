@@ -10,11 +10,11 @@ header:
       url: "https://github.com/Synopsis"
 excerpt: "Open Source Computational Cinematography"
 
-intro: 
+intro:
   - excerpt: '[Synopsis Public Beta 2](https://github.com/Synopsis/Synopsis-Inspector/releases) is available. Want to know more? - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ)'
 
-outro: 
-  - excerpt: 'Synopsis is built with love by [Anton Marini](http://vade.info), with support from [Vidvox](http://vidvox.net), and [Chloé Desaulles](http://chloedesaulles.com). <br /><br />If Synopsis is useful to you - please support out project by [contributing](contribute).'
+outro:
+  - excerpt: 'Synopsis is built with love by [Anton Marini](http://vade.info) and [Rahul Somani](https://rsomani95.github.io/), with support from [Vidvox](http://vidvox.net), and [Chloé Desaulles](http://chloedesaulles.com). <br /><br />If Synopsis is useful to you - please support out project by [contributing](contribute).'
 
 about:
   - image_path: /assets/images/Icon-512.png
@@ -46,7 +46,7 @@ inspector:
   - image_path: /assets/images/Synopsis-BR-1.jpg
     alt: "Synopsis Inspector"
     title: "Synopsis Inspector"
-    excerpt: 'Synopsis Inspector is a next generation smart media manager. Synopsis Inspector auto-discovers analyzed files on your system or locally attached drives, and lets you filter, sort, 
+    excerpt: 'Synopsis Inspector is a next generation smart media manager. Synopsis Inspector auto-discovers analyzed files on your system or locally attached drives, and lets you filter, sort,
     search and compare media, explore analyzed metadata, and features new UI paradigms like interactive visual similarity and content clustering.<br /><br />Find and explore content visually and intuitively.'
     url: "inspector"
     btn_label: "Learn More about Inspector"
@@ -59,7 +59,7 @@ sdk:
     excerpt: 'Want to add media intelligence to your macOS or iOS applications? The Synopsis SDK can help.<br /><br /> Synopsis Analyzer and Inspector are both built using the Synopsis SDK, a macOS and iOS Objective-C framework that features metadata analysis, archiving, encoding and decoding to compatible Quicktime files, as well as metadata comparison, sorting and similarity functionality.'
     url: "sdk"
     btn_label: "Learn More about our SDK"
-    btn_class: "btn--inverse"    
+    btn_class: "btn--inverse"
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -75,6 +75,3 @@ sdk:
 {% include feature_row id="sdk" type="left" %}
 
 {% include feature_row id="outro" type="center" %}
-
-
-
