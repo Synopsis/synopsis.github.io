@@ -23,7 +23,7 @@ about:
     excerpt: "Synopsis is a suite of open source software for computational cinematography - tools that help the creation of visual media.<br /><br />Synopsis is built to help editors, artists, indie film makers, a/v developers and creators do what they do best - tell stories, make experiences and build amazing tools.<br /><br />Synopsis is made by creators for creators, not to replace them."
 
 cinemanet:
-  - image_path: /assets/images/CinemaNet-1.png
+  - image_path: /assets/images/CinemaNet-1-New.png
     alt: "CinemaNet"
     title: "CinemaNet"
     excerpt: "CinemaNet is the open source library of over 200 visual, cinematic, photographic and compositional concepts that powers Synopsis's machine learning engine.<br /><br />CinemaNet is crowd sourced - contribute and evolve the taxonomy."

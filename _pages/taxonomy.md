@@ -5,7 +5,7 @@ layout: splash
 header:
   overlay_color: "#000"
   overlay_filter: "0.66"
-  overlay_image: /assets/images/CinemaNet-Header.jpg
+  overlay_image: /assets/images/CinemaNet-Header-New.png
   actions:
     - label: "CinemaNet Github"
       url: "https://github.com/Synopsis/CinemaNet"
