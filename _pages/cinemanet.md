@@ -5,15 +5,15 @@ layout: splash
 header:
   overlay_color: "#000"
   overlay_filter: "0.66"
-  overlay_image: /assets/images/CinemaNet-Header.jpg
+  overlay_image: /assets/images/CinemaNet-Header-New.png
   actions:
     - label: "CinemaNet Github"
       url: "https://github.com/Synopsis/CinemaNet"
 excerpt: "Open data set and models for common ML platforms"
 
-intro: 
+intro:
   - excerpt: '[Synopsis Public Beta 2](https://github.com/Synopsis/Synopsis-Inspector/releases) is available. Want to know more? - [join our slack channel](https://join.slack.com/t/synopsis-discuss/shared_invite/enQtODIzNjg5MzA1MDYwLTg4OGM5ZGMzZTQ3OTBjYTQzZDMyNDY0ZWM3NzFkN2YxZTE5NWI5NWQyMmZjMGE1OGYyZmExMWFlZWVkMDE4ZWQ)'
-  
+
 
 gallery:
 
@@ -37,7 +37,7 @@ gallery:
     alt: "Possible tags: Extreme Close Up, Person, Face, High Key Lighting"
     title: "Possible tags: Extreme Close Up, Person, Face, High Key Lighting"
 
-    
+
 
 label_rows:
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/the-disaster-artist/the-disaster-artist_33.jpeg
@@ -79,7 +79,7 @@ label_rows:
     alt: "Shot Level"
     title: "Shot Level"
     excerpt: "tilted, level"
-    
+
   - image_path: https://storage.googleapis.com/synopsis_cinemanet/FilmGrab/blade-runner-2049/blade-runner-2049_41.jpeg
     alt: "Shot Lighting"
     title: "Shot Lighting"
@@ -151,7 +151,7 @@ CinemaNet is inspired by the language of the art of cinema. Terminology from scr
 
 # About Bias
 
-The history of film is long, and often troublesome. Issues of respresentation, who gets leading roles, and shifting cultural norms are hugely problematic for historical data sets like ours. Because older films contain now outdated tactless tropes (racism, sexism, cultural sterotyping - the list goes on and on) - our data set will inherently contain these biases - and any models trained on them if not carefully reviewed may contain them as well. 
+The history of film is long, and often troublesome. Issues of respresentation, who gets leading roles, and shifting cultural norms are hugely problematic for historical data sets like ours. Because older films contain now outdated tactless tropes (racism, sexism, cultural sterotyping - the list goes on and on) - our data set will inherently contain these biases - and any models trained on them if not carefully reviewed may contain them as well.
 
 *That's a problem for any software that uses these models*.
 
