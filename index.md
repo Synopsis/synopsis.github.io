@@ -1,5 +1,5 @@
 ---
-permalink: /index
+permalink: /
 redirect_to:
   - https://www.special-circumstances.info
- ---
+---
