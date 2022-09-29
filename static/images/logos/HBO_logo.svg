@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="422.20026"
+   height="173.86394"
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="20200220010134!HBO_logo.svg">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="4.0762645"
+     inkscape:cx="225.60693"
+     inkscape:cy="86.931966"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="false" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-283.315,-449.58861)">
+    <path
+       style="fill:#000000;fill-rule:nonzero;stroke:none;stroke-width:0.421771"
+       d="m 407.19347,622.65106 h -46.23711 v -66.03893 h -30.01097 v 66.03893 h -47.4701 L 283.315,452.43685 h 47.63039 v 63.31402 h 30.01097 v -63.31402 h 46.23711 z m 211.85232,0.80143 c 47.67963,-0.0247 86.48188,-39.62828 86.46947,-87.3203 -0.0122,-48.69077 -38.78984,-86.50655 -86.46947,-86.54355 -47.61811,-0.0372 -71.95733,35.0169 -77.96199,49.17164 0.0494,-21.24443 -20.88683,-46.31108 -45.37403,-46.3481 h -78.89901 v 170.17723 l 73.56018,0.0247 c 29.66574,0 50.76218,-25.69548 50.79916,-47.72903 6.76913,13.87113 30.25758,48.57982 77.87569,48.56746 z m -134.8398,-69.24468 c 6.8061,0 12.1696,6.71976 12.1696,14.37666 0,7.65684 -5.3635,14.38898 -12.1696,14.38898 h -23.3898 v -28.76564 z m 0.0863,-63.89352 c 6.80608,0 12.16958,6.71979 12.16958,14.37665 0,7.65686 -5.3635,14.37667 -12.16958,14.37667 h -23.3899 v -28.75332 z m 31.14529,45.85487 c 5.36351,-0.67815 14.29035,-6.80608 17.4468,-10.72698 -1.10968,4.85797 -1.19599,18.90172 0.0987,23.74736 -3.588,-5.53611 -12.09564,-12.34222 -17.54546,-13.02038 z m 60.31785,0 c 0,-23.92 19.39493,-43.3149 43.31493,-43.3149 23.93235,0 43.3272,19.3949 43.3272,43.3149 0,23.92001 -19.39485,43.31492 -43.3272,43.31492 -23.92,0 -43.31493,-19.39491 -43.31493,-43.31492 z m 43.31493,34.05518 c 18.81542,0 34.05515,-15.25207 34.05515,-34.05518 0,-18.80309 -15.23973,-34.05515 -34.05515,-34.05515 -18.80311,0 -34.05516,15.25206 -34.05516,34.05515 0,18.80311 15.25205,34.05518 34.05516,34.05518"
+       id="path9056"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
