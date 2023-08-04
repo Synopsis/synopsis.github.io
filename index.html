@@ -1,224 +1,48 @@
-<!doctype html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>OZU • hello</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#000000">
+	<link rel="stylesheet" type="text/css" media="screen"  href="base.css" />
+</head>
+	<body>
+	
+		<div class="container">
+			<video id="video-bg" playsinline autoplay loop muted>
+				<source src="ozu-bg.mp4" type="video/mp4">
+			</video>
+			<div class="home-content">
+				<h1>OZU</h1>	
+				<div id="video-control" onclick="videoPlaybackControl()" class="video-control-play">Play / Pause</div>
+				<div id="alpha-signup"><a href="https://airtable.com/shrEWRpXPJLOJVQhG">request alpha access</a></div>
+			</div>
+		</div>
 
+		<script>
+			
+			// Get the video
+			var video = document.getElementById("video-bg");
 
+			// Get the button
+			var btn = document.getElementById("video-control");
 
-   <!-- SEO -->
-    <title>Ozu - Narrative Video Co-Pilot</title>
-    <meta name="description" content="Ozu is your narrative tv, film, and video co-pilot.">
+		    // Pause and play the video
+		    function videoPlaybackControl() {
+				let videoControlButton = document.getElementById('video-control');
+				if (video.paused) {
+					video.play();
+					videoControlButton.classList.add('video-control-play');
+					videoControlButton.classList.remove('video-control-pause');
+				} else {
+					video.pause();
+					videoControlButton.classList.add('video-control-pause');
+					videoControlButton.classList.remove('video-control-play');					
+				}
+		    }
+			
+	  </script>		
 
-    <!-- URL CANONICAL -->
-    <link rel="canonical" href="http://ozu.ai/">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
-
-    <!-- CSS WebSlides -->
-    <link rel="stylesheet" type="text/css" media="all" href="static/css/webslides.css">
-
-    <link rel="stylesheet" type="text/css" media="all" href="static/css/style.css">
-
-    <!-- Optional - CSS SVG Icons (Font Awesome) -->
-    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
-
-    <!-- <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" /> -->
-
-
-    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
-
-    <!-- FACEBOOK -->
-    <meta property="og:url" content="http://ozu.ai/"> <!-- https://www.ozu.ai -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Ozu - Narrative Video Co-Pilot"> <!-- EDIT -->
-    <meta property="og:description" content="Ozu is your narrative tv, film, and video co-pilot."> <!-- EDIT -->
-    <meta property="og:updated_time" content="2022-09-28T17:20:50"> <!-- EDIT -->
-    <meta property="og:image" content="static/images/hero.jpg"> <!-- EDIT -->
-
-    <!-- FAVICONS -->
-    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
-    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
-    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
-    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
-    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
-    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
-    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
-
-    <!-- Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#333333">
-
-    <style type="text/css">
-      html 
-      {
-        scroll-behavior: smooth;
-      }
-
-      header[role='banner']
-      {
-        position:fixed;
-        padding:0px;
-        background-color: rgba(0, 0, 0, 0.0);
-      }
-
-      nav[role='navigation'] li a 
-      {
-        background-color: rgba(0, 0, 0, 0.9);
-      }
-
-      /* See https://www.da.vidbuchanan.co.uk/widgets/css-gradient-fixer/  */
-      .bg-gradient-h-bw 
-      {
-        background: linear-gradient(180deg, #000 0%, #fff 15%);
-      }
-
-      .rec709
-      {
-        border-bottom: 2px;
-        border-style: solid;
-      }
-
-      .y
-      {
-        border-color: rgb(235,235,16);
-      }
-
-      .c
-      {
-        border-color: rgb(16,235,235);
-      }
-
-      .g
-      {
-        border-color: rgb(16,235,16);
-      }
-
-      .m
-      {
-        border-color: rgb(235,16,235);
-      }
-
-      .r
-      {
-        border-color: rgb(235,16,16);
-      }
-
-      .b
-      {
-        border-color: rgb(16,16,235);
-      }
-
-      .q
-      {
-        border-color: rgb(94,20,154);
-      }
-
-      .team-member {
-        width:150px; 
-        aspect-ratio: 1/1;
-        filter:grayscale(100%);
-      }
-
-      .flexblock.gallery {
-        padding-left: 48px;
-        padding-right: 48px;
-      }
-
-
-      .flexblock.gallery li {
-        width: 10%;
-        background: #111;
-        box-shadow: None;
-      }
-
-      .min-margin {
-/*        margin: 5px;
-*/      }
-
-      #demo-video::cue {
-/*    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-    color: #ffff00;
-*/    font-size: 18px;
-      font-family: "Roboto";
-      font-weight: lighter;
-      text-align: left;
-}
-
-
-    </style>
-
-  </head>
-  <body>
-  
-
-    <main role="main">
-      <article >
-      <!-- <article id="webslides" class="vertical"> -->
-
-<!-- Slide 1 Ozu -->
-
-        <a id="ozu"></a>
-
-
-
-        <!-- Fin -->
-
-        <section class="fullscreen bg-black">
-          <div class="embed dark">
-            <video autoplay loop="" muted="" poster="/static/images/Ozu-bg.jpg.jpg">
-              <source src="static/videos/Ozu-bg.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <div class="flex-content">
-            <div class="cta">
-              <div class="number">
-                <img src="static/images/OZU-transparent.png"  alt="Ozu">
-              </div>
-              <div class="benefit" style="border-image:none; border-color: white;">
-              <!-- <p class="text-subtitle">Built with love by</p>                -->
-              <h3 class="text-landing">Ozu</h3>
-                <br />
-                <br />
-                <p>Your narrative tv, film, and video co-pilot.</p> 
-                <br />
-                <br />
-                <!-- <p><a href="https://qiv13dsu615.typeform.com/to/lGPyt0KH">Sign-up for early access and updates</a></p> -->
-
-<button data-tf-popup="lGPyt0KH" data-tf-size="50" style="all:unset;font-family:Roboto;font-weight: lighter;display:inline-block;max-width:50%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#000;color:#FFFFFF;font-size:18px;border-radius:5px;padding:0 33px;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get in touch</button><script src="https://embed.typeform.com/next/embed.js"></script>
-              </div>
-            </div>
-          </div>
-
-          <!-- .end .wrap -->
-        </section>
-
-      </article>
-      <!-- end article -->
-    </main>
-    <!-- end main -->
-
-   <!-- A global footer -->
-
-<!--      <footer role="contentinfo">
-      <div class="wrap">
-        <p>Synopsis, by <a href="https://special-circumstances.info">Special Circumstances</a>
-        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
-      </div>
-    </footer> 
- -->
-    <!-- Required -->
-    <script src="static/js/webslides.js"></script>
-    <script>
-      window.ws = new WebSlides( {loop :false , navigateOnScroll: true});
-    </script>
-
-    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-    <script defer src="static/js/svg-icons.js"></script>
-
-    <!-- <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script> -->
-
-  </body>
+	</body>
 </html>

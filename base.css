@@ -1,0 +1,93 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home {
+    height: 100vh;
+    position: relative;
+    border: 1px solid red;
+}
+
+.container-content {
+    position: relative;
+    padding-top: 150px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Ozu Logo */
+h1 {
+  background-image: url(ozu-logo.svg);
+  background-repeat:  no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999pt;
+  text-align: center;
+  height: 32pt;
+  width: 120pt;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid red; */
+}
+
+/* Sign Up for Alpha Access */
+a {
+  cursor: pointer;
+  border: 1.25pt solid white;
+  border-radius: 4pt;
+  opacity: 0.8;
+  color: white;
+  padding: 3pt 9pt;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+a:hover {
+  opacity: 1.0;
+}
+
+#alpha-signup {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+/* Play Pause Button */
+#video-control {
+  width: 54pt;
+  height: 20pt;
+  cursor: pointer;
+  background-image: url(ozu-play-pause.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-indent: -99999px;
+}
+
+#video-control:hover {
+  opacity: 1.0;
+}
+
+.video-control-play {
+  background-position: top;
+}
+.video-control-pause {
+  background-position: bottom;
+}
