@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>OZU • hello</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#000000">
+	<link rel="stylesheet" type="text/css" media="screen"  href="base.css" />
+</head>
+	<body>
+	
+		<div class="container">
+			<video id="video-bg" playsinline autoplay loop muted>
+				<source src="ozu-bg.mp4" type="video/mp4">
+			</video>
+			<div class="home-content">
+				<h1>OZU</h1>	
+				<div id="video-control" onclick="videoPlaybackControl()" class="video-control-play">Play / Pause</div>
+				<div id="alpha-signup"><a href="https://airtable.com/shrEWRpXPJLOJVQhG">request alpha access</a></div>
+			</div>
+		</div>
+
+		<script>
+			
+			// Get the video
+			var video = document.getElementById("video-bg");
+
+			// Get the button
+			var btn = document.getElementById("video-control");
+
+		    // Pause and play the video
+		    function videoPlaybackControl() {
+				let videoControlButton = document.getElementById('video-control');
+				if (video.paused) {
+					video.play();
+					videoControlButton.classList.add('video-control-play');
+					videoControlButton.classList.remove('video-control-pause');
+				} else {
+					video.pause();
+					videoControlButton.classList.add('video-control-pause');
+					videoControlButton.classList.remove('video-control-play');					
+				}
+		    }
+			
+	  </script>		
+
+	</body>
+</html>

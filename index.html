@@ -1,48 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>OZU • hello</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#000000">
-	<link rel="stylesheet" type="text/css" media="screen"  href="base.css" />
-</head>
-	<body>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Find your Story | OZU</title>
+		<meta name="description" content="On-scroll animations for perspective image grids with different layouts." />
+		<meta name="keywords" content="on scroll animation, 3d, image grid, perspective, gsap, javascript, css grid" />
+		<meta name="author" content="Codrops" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 	
-		<div class="container">
-			<video id="video-bg" playsinline autoplay loop muted>
-				<source src="ozu-bg.mp4" type="video/mp4">
-			</video>
-			<div class="home-content">
-				<h1>OZU</h1>	
-				<div id="video-control" onclick="videoPlaybackControl()" class="video-control-play">Play / Pause</div>
-				<div id="alpha-signup"><a href="https://airtable.com/shrEWRpXPJLOJVQhG">request alpha access</a></div>
+
+		<!-- <link rel="stylesheet" href="https://use.typekit.net/hky5sxh.css"> -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!-- <script src="//tympanus.net/codrops/adpacks/analytics.js"></script> -->
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<a class="frame__back" href="https://medium.com/@ozu-technology/why-we-started-ozu-8b4f4e884726">Why we started OZU</a>
+				<a class="frame__prev" href="https://airtable.com/appQLJNvQ4m4IOtLV/shrmZJ7XoxUDUQJiQ">Friends and Family Beta</a>
+
+<!-- <div id="cdawrap" class="cdawrap"><a href="https://bit.ly/codrops-diviai" class="cda-sponsor-link" target="_blank" rel="nofollow noopener">Divi AI: On demand content creation, code writing &amp; image generation.</a></div> -->
+
 			</div>
-		</div>
 
-		<script>
-			
-			// Get the video
-			var video = document.getElementById("video-bg");
+			<div class="intro"> 
+				<h1 class="intro__title"> 
+					<span class="intro__title-sub">Filmakers see the world differently</span> 
+				</h1> 
+				<div class="intro__info">So should Ai</div> 
+				<div class="intro__info">Intoducing OZU</div> 
+			</div>
+			<section class="content">				
+				<div class="grid grid--1">
+					<div class="grid-wrap">
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/2ecf4e178c_383645_3-second_cropped_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/3b6d8290-3709-4f80-b8f3-7617d034723c_gradedThumbnail_w800px_c6b35b05-d5c0-4526-b5ee-7f9d735cd67c_1696745829739.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/4e2da38c70_1673255_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/6d7a5daa22_1846680_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/9cab441886_1846684_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/11d5f11f76_396643_5-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/22a3a0a73e_396646_2-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/039cd5c3f9_1673261_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/91ab4315-eb4b-4621-9211-5cb9d13b6189_gradedThumbnail_w800px_ecd0f3f3-3a61-41ff-a899-6a6e7cf98ee9_1697026611054.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/649f7b80-b8dd-4082-839d-1f1b1ebe3fbc_gradedThumbnail_w800px_5b303de4-0784-49ba-a46b-bb1dd9d07d3b_1697025970551.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/656c40fe-9833-49c2-ad46-e64ea81f204c-gradedThumbnail_w800px_fd1b1523-41f8-4586-bf34-8c2c32e3a169_1697358150847.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/964cee80ff_396644_4-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/17957e112b_1846682_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/556274_5733458_w800px_133140229634067472.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/556275_5733455_w800px_133140229609269147.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/556283_5623152_w800px_133113296738729967.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/556289_5623762_w800px_133113308449046809.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/577389f4-8490-457f-8db0-28d0128439b5_gradedThumbnail_w800px_e0803e23-b65c-449f-ae9c-691b4ce5857d_1697025863413.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/588943_5930235_w800px_133170387232770908.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/588951_5930456_w800px_133170390660291874.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/588952_5949018_w800px_133173062818551329.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/588954_5949023_w800px_133173063098992056.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/588955_5949016_w800px_133173062642926066.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/608256_6139353_w800px_133192166335738699.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/608262_6139350_w800px_133192166241732002.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/608264_6139355_w800px_133192166337952736.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/608265_6139361_w800px_133192166468998345.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/608266_6139358_w800px_133192166372976365.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/608278_6139386_w800px_133192169074811146.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/608280_6139378_w800px_133192168624223198.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/608361_6118917_w800px_133190408435829085.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/9480728c0f_1101671_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/aacddc96-d9da-456f-b53a-02859064bd0e_gradedThumbnail_w800px_23a7a974-45e0-41cf-8c63-a584c98dcd14_1697026430890.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/ac8b13fce7_1846683_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/b92d911f-913a-4a4d-b2e6-5d7bd62382c3_gradedThumbnail_w800px_92effe7f-296e-4c38-b541-c913a275bd95_1697026665857.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/d4914c13-c9be-4482-9064-10c530b0be0f_gradedThumbnail_w800px_f02821c6-eae0-4ee3-92ae-2eb91b7f9a19_1697026722805.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/visual-red-artgrid/e76d32fb5b_396641_2-second_w800px.jpeg)"></div></div>					</div>
+				</div>
+				<h3 class="content__title content__title--right"><br>Fluent in Film</h3>
+			</section>
 
-			// Get the button
-			var btn = document.getElementById("video-control");
+			<section class="info" style="
+//			background-color: #f33d38;
+			background: rgb(238,133,131);
+background: linear-gradient(129deg, rgba(238,133,131,1) 0%, rgba(243,61,56,1) 35%, rgba(195,49,45,1) 100%);
 
-		    // Pause and play the video
-		    function videoPlaybackControl() {
-				let videoControlButton = document.getElementById('video-control');
-				if (video.paused) {
-					video.play();
-					videoControlButton.classList.add('video-control-play');
-					videoControlButton.classList.remove('video-control-pause');
-				} else {
-					video.pause();
-					videoControlButton.classList.add('video-control-pause');
-					videoControlButton.classList.remove('video-control-play');					
-				}
-		    }
-			
-	  </script>		
+			">				
+					<div class="info-grid-right">
+						<div class="">
+							<div class="info-vertical-align-side">
+								<h3 class="info-title-left">
+									Lighting. Color. Framing. Angle. Composition. Shot Type.
+								</h3>
 
+								<!-- <div class="info-text">OZU understands the language of visual communication.</div> -->
+								
+								<div class="info-text">OZU speaks your language. Use natural language scene descriptions combined with our powerful tagging system to find your shot. </div>
+
+								<div class="info-text">Share images and shots with OZU and ask for what's similar. </div>
+
+								<div class="info-text">Precord your videos to create instant rough cuts and find the shots and stories you're looking for. </div>
+							</div>
+						</div>
+
+						<div style="
+						background-image:url(https://framerusercontent.com/images/m8DZM9CNkTOiP95zOBfa1Mstt5E.png);
+					   	background-repeat: no-repeat;
+						background-attachment: fixed;
+						background-size: 90%;
+						background-position: 400% 50%;
+						"></div>
+
+					</div>
+			</section>	
+
+			<section class="content" style="overflow: hidden;">
+				<div class="grid grid--2" >
+					<div class="grid-wrap">
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441897_3975295_w800px_132941353528102735.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441898_3976334_w800px_132941367752917727.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441900_4005802_w800px_132946818005557829.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441908_4005805_w800px_132946818106009840.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441909_3973808_w800px_132941328338398162.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441912_4005804_w800px_132946818068986788.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441913_3974165_w800px_132941336143406717.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441914_3975465_w800px_132941356079366618.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441915_4005816_w800px_132946818440132245.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441916_3974463_w800px_132941340986275779.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441917_3974783_w800px_132941345628697728.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441918_4005809_w800px_132946818281277867.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441919_4005799_w800px_132946817923179242.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441920_4005813_w800px_132946818423833997.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441921_4005819_w800px_132946818562034803.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441922_4005807_w800px_132946818208765546.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441923_3973628_w800px_132941324270266942.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441924_3975179_w800px_132941352102833865.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441925_3974160_w800px_132941336111604516.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441926_3974854_w800px_132941347212312170.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441927_4005823_w800px_132946818713135690.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441928_4005811_w800px_132946818286671924.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441929_4005818_w800px_132946818504775947.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441930_4005830_w800px_132946818876274195.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441931_4005827_w800px_132946818786530817.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441932_3975195_w800px_132941352184268911.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441933_3973916_w800px_132941331419623369.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441934_3974696_w800px_132941344395669046.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441935_4005822_w800px_132946818595949596.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441936_3974243_w800px_132941337787785612.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441937_3974995_w800px_132941348959825891.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441938_3975366_w800px_132941354641616551.jpeg)"></div></div>
+<!-- 						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441939_3975000_w800px_132941349072644924.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441940_4005826_w800px_132946818753388985.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441941_3973304_w800px_132941316419531535.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441942_3975506_w800px_132941356539294511.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441943_3973279_w800px_132941315723785572.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441944_3974690_w800px_132941344306605932.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441945_3975097_w800px_132941350808733223.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441946_3974407_w800px_132941340144630722.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441947_3975240_w800px_132941352625785919.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441948_3974411_w800px_132941340167949018.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441949_3975672_w800px_132941359270643220.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441950_3973700_w800px_132941325833731004.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441951_3973436_w800px_132941320296593700.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441952_3974018_w800px_132941333483445613.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441956_3973844_w800px_132941329898573917.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441957_3974852_w800px_132941347193060617.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441960_3975444_w800px_132941355933264541.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441961_3975378_w800px_132941354924289338.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441962_3973152_w800px_132941311286310229.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441963_3975231_w800px_132941352546763834.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/people-artgrid/441964_3974938_w800px_132941348401872256.jpeg)"></div></div>
+ -->					</div>
+				</div>
+				<h3 class="content__title">Add Some Character</h3>
+			</section>
+
+			<section class="info info-text-black" style="
+background: rgb(230,232,143);
+background: linear-gradient(230deg, rgba(230,232,143,1) 0%, rgba(189,191,104,1) 35%, rgba(150,152,72,1) 100%);"
+													>			
+					<div class="info-grid">
+						<div style="
+						background-image:url(https://framerusercontent.com/images/vI7A9hkyjBgDHPMxCZ96TVchkGc.png);
+					   	background-repeat: no-repeat;
+						background-attachment: fixed;
+						background-size: 90%;
+						background-position: -400% 50%;
+						"></div>
+
+						<div class="">
+							<div class="info-vertical-align-even">
+								<h3 class="info-title-left">
+								People are the heart of stories.<br> Now you can find them on screen and off.
+								</h3>
+
+								<div class="info-text">Customize OZU to work for your story - searching for the expressions, moods, relationships, and scenes that matter to you.</div>
+
+								<div class="info-text">Show me all the shots with Character X. Show me all the shots where they talk about Y. </div>
+
+								<div class="info-text">Combine search features like cinematic terms, natural language scene descriptions, dialogue search, similarity search, with characters to help you think aloud with your footage.</div>
+							</div>
+						</div>
+					
+					</div>
+			</section>	
+
+			<section class="content content--spacing">
+				<div class="grid grid--3">
+					<div class="grid-wrap">
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/2bf1b174a0_806293_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/2e85cb39-689b-4025-a4f9-588468a61c21_gradedThumbnail_w800px_a763cdf7-a40e-4abf-8e69-f9227950ecc9_1697969300114.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/02f4dcc21d_823230_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/2f417471eb_807363_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/5dc91a7afe_805308_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/7c2a7687a6_807384_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/7d3cf30cb7_810768_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/8a41c3f51f_822469_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/8ab54eb4a8_821231_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/9ded9ce4-59ec-4f46-aae3-82f922c19923_gradedThumbnail_w800px_d7d0c3c2-c298-4ddd-b694-916df8b0a0ca_1700475539200.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/12d5987178_817687_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/57a024bb12_818440_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/73e05b60a2_822476_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/85b87482fd_806119_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/482f65c408_810659_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/526bfb5885_817641_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/4079b80f31_808151_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/06536d2e8a_821548_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/20461c1027_817664_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/46891fd003_818846_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/54621ccdd7_806286_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/061968e3a5_823038_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/136986_6313005_w800px_133213868246613409.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/575498_5899157_w800px_133165340672735232.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/765972dfca_817645_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/acb1cc2353_817660_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/b14ade73ab_820523_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/b61ced4668_818863_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/b2959bdb3b_805507_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/bb0cff61d1_805198_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/be3e0d6e29_542682_2000-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/c444cd8e81_820544_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/ca4058de43_542645_20000-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/cbd495142d_808118_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/d049d6dc68_808038_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/e89db1c1-8914-42f0-a578-be2585d63a5e_gradedThumbnail_w800px_0fda02df-49b2-419c-ac3f-040d9f86145f_1704036999864.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/e2575c7b9d_542676_2000-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/eb3986861d_808212_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/ebf27e4fda_817588_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/f135e61a49_816100_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/fa31b8eae1_807248_0-second_w800px.jpeg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/chaotic-artgrid/fb2f730f1b_822455_0-second_w800px.jpeg)"></div></div>			
+					</div>
+				</div>
+				<h3 class="content__title content__title--center ">Control the Chaos</h3>
+			</section>
+			<section class="content content--spacing">
+				<div class="grid grid--4">
+					<div class="grid-wrap">
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/21.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/24.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/14.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/23.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/22.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					</div>
+				</div>
+				<h3 class="content__title content__title--right">Visualize</br>Summarize<br>Organize<br>
+			</section>
+			<section class="content content--spacing">
+				<div class="grid grid--5">
+					<div class="grid-wrap">
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/29.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/37.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/32.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/41.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/23.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/27.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/46.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/35.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/39.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/25.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/44.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/43.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/26.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/14.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/33.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/30.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/21.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/31.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/24.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/36.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/42.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/38.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/40.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/28.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/22.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/34.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/47.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/45.jpg)"></div></div>
+						<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/48.jpg)"></div></div>
+					</div>
+				</div>
+				<h3 class="content__title">Edit</h3>
+			</section>
+			<section class="content content--spacing">
+			<div class="grid grid--6">
+				<div class="grid-wrap">
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/43.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/34.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/21.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/39.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/47.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/45.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/27.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/31.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/28.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/30.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/36.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/14.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/23.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/35.jpg)"></div></div>
+					<div class="grid__item"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+				</div>
+			</div>
+			<h3 class="content__title">Collaboration.<br><br>Coming Soon.</h3>
+			</section>
+			<section class="outro">
+				<h2 class="outro__title">Join the friends and family launch.</h2>
+					<div class="card">
+						<h3 class="card__title" style="border: solid 1px gray; border-radius: 10px; padding:10px"><a href="http://tympanus.net/Development/ScrollBasedLayoutAnimations/">Sign Up</a></h3>
+					</div>
+					
+			</section>
+			<p class="credits">Follow Us<br><br>Linked In Twitter Insta Medium</p>
+		</main>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/lenis.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="module" src="js/index.js"></script>
 	</body>
 </html>
