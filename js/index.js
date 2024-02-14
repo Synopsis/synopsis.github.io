@@ -93,18 +93,20 @@ const applyAnimation = (grid, animationType) => {
 			// 	z: () => gsap.utils.random(-150,-100)
 			// })
 			.fromTo(gridItems, {
-				x: -200,
+				xPercent:-50,
+				// x: -400,
 				// xPercent: () => gsap.utils.random(-50,-200),
 				// rotationY: -25,
 				rotationX: 0,
-				filter: 'brightness(100%)'
+				// filter: 'brightness(100%)'
 			}, {
-				ease: 'power2',
-				x:200,
+				// ease: 'power2',
+				xPercent:50,
+				// x:400,
 				// xPercent: () => gsap.utils.random(250,200),
 				// rotationY: 25,
 				// rotationX: -10,
-				filter: 'brightness(70%)'
+				// filter: 'brightness(70%)'
 			}, 0)
 			// .fromTo(gridWrap, {
 			// 	rotationZ: -5,
@@ -187,11 +189,11 @@ const applyAnimation = (grid, animationType) => {
 			}, 0.5)
 			.fromTo(gridItems, {
 				rotationX: -70,
-				filter: 'brightness(0%)'
+				filter: 'brightness(50%)'
 			}, {
 				duration: 1,
 				rotationX: 70,
-				filter: 'brightness(100%)',
+				filter: 'brightness(120%)',
 				stagger: 0.04
 			}, 0)
 			
@@ -216,7 +218,7 @@ const applyAnimation = (grid, animationType) => {
 				rotationX: 30
 			})
 			.fromTo(gridItems, {
-				filter: 'brightness(0%)'
+				filter: 'brightness(50%)'
 			}, {
 				filter: 'brightness(100%)'
 			}, 0)
@@ -228,11 +230,11 @@ const applyAnimation = (grid, animationType) => {
 				xPercent: 100,
 				ease: 'power1'
 			}, 0)
-			.addLabel('rowsEnd', '>-=0.15')
-			.to(gridItems, {
-				ease: 'power1',
-				yPercent: () => gsap.utils.random(-100, 200),
-			}, 'rowsEnd');
+			// .addLabel('rowsEnd', '>-=0.15')
+			// .to(gridItems, {
+			// 	ease: 'power1',
+			// 	yPercent: () => gsap.utils.random(-100, 200),
+			// }, 'rowsEnd');
 			break;
 
 		case 'type6':
