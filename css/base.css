@@ -453,12 +453,12 @@ body #cdawrap {
 {
 	:root
 	{
-			font-size: 12px;
+			font-size: 10px;
 	}
 
 	body
 	{
-		    line-height: 1.4;
+		    line-height: 1.25;
 	}
 
 	.intro__title-sub 
