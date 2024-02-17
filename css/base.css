@@ -225,11 +225,13 @@ body #cdawrap {
     text-transform: uppercase;
 }
 
+
+
 .intro__title-sub {
-    font-size: clamp(1.5rem,20vw,8rem);
-    max-width: 15ch;
+   font-size: 8rem; 
     margin: 0 auto;
 }	
+
 
 .intro__info {
 	z-index: 1000;
@@ -255,7 +257,7 @@ body #cdawrap {
 
 .info 
 {
-	height: calc(70vh);
+	height: 70vh;
     place-items: center;
     display: grid;
     margin-bottom: 1vh;
@@ -445,6 +447,52 @@ body #cdawrap {
 	background-size: cover;
 	background-position: 50% 50%;
 }
+
+/* Phone Overrides */
+@media only screen and (max-width: 768px) 
+{
+	:root
+	{
+			font-size: 12px;
+	}
+
+	body
+	{
+		    line-height: 1.4;
+	}
+
+	.intro__title-sub 
+	{
+   		font-size: 3rem; 
+    	margin: 0 auto;
+	}	
+
+	.intro__info 
+	{
+	    margin-top: 10vh;
+	    margin-bottom: 10vh;
+	    font-size: 2rem;
+	}
+
+	.content__title 
+	{
+		font-size: 4rem;
+	}
+
+
+	.info 
+	{
+		height: 100vh;
+	}
+
+	.info-title-left
+	{
+	    font-size: 1.3rem,;
+		margin:1rem;
+		padding:1.0rem;
+	}
+}
+
 
 @media screen and (min-width: 53em) {
 	.frame {
