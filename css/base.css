@@ -28,7 +28,7 @@ body {
 /*	font-variation-settings: "Inter" 0, "wght" 300;*/
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-    line-height: 1.8;
+    line-height: 1.6;
     font-weight: 600;
 }
 
@@ -257,7 +257,7 @@ body #cdawrap {
 
 .info 
 {
-	height: 70vh;
+	height: 85vh;
     place-items: center;
     display: grid;
     margin-bottom: 1vh;
@@ -330,6 +330,16 @@ body #cdawrap {
 	display: grid;
   	grid-template-columns: 40% 60%;	
 }
+
+.info-grid-right-background-image
+{
+		background-image:url(https://framerusercontent.com/images/m8DZM9CNkTOiP95zOBfa1Mstt5E.png);
+	   	background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 90%;
+		background-position: 400% 50%;
+}
+
 
 .card-wrap {
 	margin-top: 5vh;
@@ -490,6 +500,21 @@ body #cdawrap {
 	    font-size: 1.3rem,;
 		margin:1rem;
 		padding:1.0rem;
+	}
+
+	.info-grid-left
+	{
+	  	grid-template-columns: 70% 30%;	
+	}
+
+	.info-grid-right
+	{
+	  	grid-template-columns: 60% 40%;	
+	}
+	.info-grid-right-background-image
+	{
+			background-size: 225%;
+			background-position: -20% 50%;
 	}
 }
 

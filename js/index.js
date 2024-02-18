@@ -93,15 +93,15 @@ const applyAnimation = (grid, animationType) => {
 			// 	z: () => gsap.utils.random(-150,-100)
 			// })
 			.fromTo(gridItems, {
-				xPercent:-50,
+				xPercent:-25,
 				// x: -400,
 				// xPercent: () => gsap.utils.random(-50,-200),
 				// rotationY: -25,
 				rotationX: 0,
 				// filter: 'brightness(100%)'
 			}, {
-				// ease: 'power2',
-				xPercent:50,
+				ease: 'power2',
+				xPercent:-25,
 				// x:400,
 				// xPercent: () => gsap.utils.random(250,200),
 				// rotationY: 25,
@@ -212,10 +212,10 @@ const applyAnimation = (grid, animationType) => {
 
 			timeline
 			.set(gridWrap, {
-				rotationX: 50
+				rotationX: 0
 			})
 			.to(gridWrap, {
-				rotationX: 30
+				rotationX: 90
 			})
 			.fromTo(gridItems, {
 				filter: 'brightness(50%)'
