@@ -533,7 +533,8 @@ body #cdawrap {
 	.info-grid-right-background-image
 	{
 			background-size: 225%;
-			background-position: -20% 50%;
+			background-position: 0% 20%;
+			background-repeat: repeat;
 	}
 
 	.info-grid-left-background-image
