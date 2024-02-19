@@ -202,7 +202,7 @@ const applyAnimation = (grid, animationType) => {
 		case 'type5':
 
 			// Set some CSS related style values
-			grid.style.setProperty('--grid-width', '120%');
+			grid.style.setProperty('--grid-width', '150%');
 			grid.style.setProperty('--grid-columns', '8');
 			grid.style.setProperty('--grid-gap', '0');
 			grid.style.setProperty('--grid-item-ratio', '16.0/9.0');
@@ -211,24 +211,36 @@ const applyAnimation = (grid, animationType) => {
 			const gridObj = getGrid(gridItems);
 
 			timeline
-			.set(gridWrap, {
-				rotationX: 0
-			})
-			.to(gridWrap, {
-				rotationX: 90
-			})
+			// .set(gridWrap, {
+			// 	rotationX: 0
+			// })
+			// .to(gridWrap, {
+			// 	rotationX: 90
+			// })
+			.set(gridObj.rows('even'), {
+				xPercent: 300,
+				// ease: 'power1'
+				z: -500,
+			}, 0)
+			.set(gridObj.rows('odd'), {
+				xPercent: -300,
+				// ease: 'power1'
+				z: -500,
+			}, 0)
 			.fromTo(gridItems, {
 				filter: 'brightness(50%)'
 			}, {
 				filter: 'brightness(100%)'
 			}, 0)
 			.to(gridObj.rows('even'), {
-				xPercent: -100,
-				ease: 'power1'
+				xPercent: -300,
+				// ease: 'power1'
+				z: 500,
 			}, 0)
 			.to(gridObj.rows('odd'), {
-				xPercent: 100,
-				ease: 'power1'
+				xPercent: 300,
+				// ease: 'power1'
+				z: 500,
 			}, 0)
 			// .addLabel('rowsEnd', '>-=0.15')
 			// .to(gridItems, {
