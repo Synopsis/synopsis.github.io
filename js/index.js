@@ -93,15 +93,15 @@ const applyAnimation = (grid, animationType) => {
 			// 	z: () => gsap.utils.random(-150,-100)
 			// })
 			.fromTo(gridItems, {
-				xPercent:-25,
+				xPercent:-50,
 				// x: -400,
 				// xPercent: () => gsap.utils.random(-50,-200),
 				// rotationY: -25,
-				rotationX: 0,
+				// rotationX: 0,
 				// filter: 'brightness(100%)'
 			}, {
-				ease: 'power2',
-				xPercent:-25,
+				// ease: 'power2',
+				xPercent:50,
 				// x:400,
 				// xPercent: () => gsap.utils.random(250,200),
 				// rotationY: 25,
