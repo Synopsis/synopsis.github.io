@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us | OZU</title>
+    <meta
+      name="description"
+      content="OZU builds models and products that help people see and capture the world like a filmmaker."
+    />
+    <meta
+      name="keywords"
+      content="OZU, AI video, filmmaking, computational cinema, video technology"
+    />
+    <meta name="author" content="OZU" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+
+      // Check if background image loaded successfully
+      window.addEventListener("load", function () {
+        var headerSection = document.querySelector(".about-header");
+        var signupSection = document.querySelector(".signup-section");
+        var img = new Image();
+        img.src = "img/about-hero-image.jpeg";
+
+        img.onload = function () {
+          console.log("Background image loaded successfully");
+          headerSection.classList.add("bg-loaded");
+          signupSection.classList.add("bg-loaded");
+        };
+
+        img.onerror = function () {
+          console.error("Failed to load background image");
+          headerSection.classList.add("bg-fallback");
+          signupSection.classList.add("bg-fallback");
+        };
+      });
+    </script>
+    <style>
+      .about-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      /* Header */
+      .about-header {
+        padding: 120px 0 60px;
+        text-align: center;
+        position: relative;
+        background-image: url("img/about-hero-image-2.jpeg");
+        background-color: #1a1a22; /* Fallback background color */
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        margin-bottom: 60px;
+      }
+
+      /* Removed dark mask */
+
+      .about-header-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .about-header h1 {
+        font-size: clamp(3.5rem, 5vw, 5rem);
+        margin-bottom: 2rem;
+        font-weight: 800;
+        color: white;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+      }
+
+      .about-description {
+        font-size: clamp(1.2rem, 2vw, 1.6rem);
+        max-width: 900px;
+        margin: 0 auto 3rem;
+        line-height: 1.5;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.95);
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      /* Section styling */
+      .about-section {
+        margin-bottom: 120px;
+      }
+
+      .section-heading {
+        font-size: clamp(2.5rem, 4vw, 3.2rem);
+        text-align: center;
+        margin-bottom: 60px;
+        font-weight: 700;
+      }
+
+      /* Values grid */
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+      }
+
+      @media (min-width: 1024px) {
+        .values-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .value-card {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 40px;
+        transition: transform 0.3s ease;
+      }
+
+      .value-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .card-icon {
+        font-size: 32px;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .card-content {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        opacity: 0.85;
+      }
+
+      /* Timeline */
+      .timeline {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .timeline::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        background-color: rgba(255, 255, 255, 0.08);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1.5px;
+      }
+
+      .timeline-item {
+        padding: 0 40px;
+        position: relative;
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+      }
+
+      .timeline-item::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: var(--color-title);
+        border-radius: 50%;
+        top: 24px;
+        z-index: 1;
+      }
+
+      .left {
+        left: 0;
+        text-align: right;
+      }
+
+      .right {
+        left: 50%;
+      }
+
+      .left::after {
+        right: -8px;
+      }
+
+      .right::after {
+        left: -8px;
+      }
+
+      .timeline-year {
+        font-weight: 700;
+        color: var(--color-title);
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+      }
+
+      .timeline-content {
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.03);
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      /* Sign-up section with background */
+      .signup-section {
+        position: relative;
+        padding: 100px 0;
+        text-align: center;
+        background-image: url("img/about-hero-image.jpeg");
+        background-color: #1a1a22; /* Fallback background color */
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        margin-bottom: 60px;
+      }
+
+      /* Removed dark mask */
+
+      .signup-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .signup-section h2 {
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
+        margin-bottom: 24px;
+        color: white;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+      }
+
+      .signup-section p {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        line-height: 1.6;
+        margin-bottom: 40px;
+        color: rgba(255, 255, 255, 0.95);
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+      }
+
+      .signup-button {
+        display: inline-block;
+        background: var(--color-title);
+        color: white;
+        padding: 16px 36px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .signup-button:hover {
+        background: var(--color-link-hover);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Additional styling for background image states */
+      .bg-loaded {
+        /* Additional styling when background loaded successfully */
+      }
+
+      .bg-fallback {
+        background-image: none !important;
+        background: linear-gradient(135deg, #1a1a22, #2d2d3a) !important;
+      }
+
+      @media screen and (max-width: 768px) {
+        .about-header {
+          padding: 80px 0 40px;
+        }
+
+        .about-section {
+          margin-bottom: 80px;
+        }
+
+        .timeline::after {
+          left: 30px;
+        }
+
+        .timeline-item {
+          width: 100%;
+          padding-left: 60px;
+          padding-right: 20px;
+        }
+
+        .timeline-item::after {
+          left: 22px;
+        }
+
+        .left {
+          text-align: left;
+        }
+
+        .left::after {
+          right: auto;
+        }
+
+        .right {
+          left: 0;
+        }
+
+        .signup-section {
+          padding: 60px 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="loading">
+    <nav>
+      <img class="logo" src="img/ozu-logo.png" alt="OZU" />
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+
+    <header class="about-header">
+      <div class="about-container about-header-content">
+        <h1>About OZU</h1>
+        <p class="about-description">
+          OZU builds models and products that help people see and capture the
+          world like a filmmaker. We're a remote-first video AI startup based in
+          Brooklyn NY and backed by angels, VCs, and entrepreneurs from Figma,
+          Atlassian, Runway, NVIDIA, and Maximum Effort.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <div class="about-container">
+        <section class="about-section">
+          <h2 class="section-heading">Things we ❤️</h2>
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="card-header">
+                <div class="card-icon">🎬</div>
+                <h3 class="card-title">Film and Video Making Craft</h3>
+              </div>
+              <p class="card-content">
+                We believe in the wisdom of the experts that craft stories for
+                film, tv, and streaming. Their techniques and knowledge guide
+                our innovations.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="card-header">
+                <div class="card-icon">✨</div>
+                <h3 class="card-title">Creative Flow</h3>
+              </div>
+              <p class="card-content">
+                The feeling we get while making, in particular when we care
+                about what we're making. We design our tools to enhance and
+                maintain this state.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="card-header">
+                <div class="card-icon">📚</div>
+                <h3 class="card-title">Long-form Visual Storytelling</h3>
+              </div>
+              <p class="card-content">
+                As a mainstream skill all people deserve. Why can't the photo
+                album of the future be an episodic series? That's the future we
+                want to manifest.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-heading">Our Journey</h2>
+          <div class="timeline">
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <div class="timeline-year">The Beginning</div>
+                <p>
+                  We're long-time computational cinema nerds obsessed with
+                  building creative tools. We love real-time video, creative
+                  flow, and think there's so much more that can be unlocked by
+                  technology.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <div class="timeline-year">2020</div>
+                <p>
+                  We trained and deployed our own ML models to understand
+                  cinematography and editing. We launched projects for HBO and
+                  Michael Kors, like connecting HBO's episodic archives to
+                  cameras and video walls so users could move and speak and see
+                  matching shots playback from HBO's library.
+                </p>
+                <p>
+                  We also turned a live Michael Kors runway show into 400 edited
+                  videos with individual Final Cut Pro project files ready to go
+                  so editors could fine tune them.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <div class="timeline-year">2023</div>
+                <p>
+                  We released the Precorder - a Mac App for running OZU models
+                  locally on Apple Silicon to turn huge video archives into
+                  structured data. With it, users could take 1000 hours of
+                  video, and in a couple days, without spending money on
+                  compute, they could search through, edit with, and create
+                  videos from their archive.
+                </p>
+                <p>
+                  We demoed the Precorder in Feb 2023 live at Figma AI in NYC
+                  which led to a new round of founding and design partners.
+                  Public demos at USV's Art and AI, and Lighspeed's Generative
+                  NYC confirmed that watching video search and curation live -
+                  across huge libraries - is something the world needs to be
+                  able to do.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <div class="timeline-year">Today</div>
+                <p>
+                  Our latest product is for a wider audience - OZU Studio - and
+                  is live in beta now. It's an AI video player in the browser,
+                  designed to work with Precorded video. OZU Studio lets people
+                  playback, search, share, and curate video in a whole new way.
+                  All sorts of users, thinking aloud with video.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="signup-section">
+        <div class="signup-content">
+          <h2>OZU Studio</h2>
+          <p>
+            Our latest product is for a wider audience - OZU Studio - and is
+            live in beta now. It's an AI video player in the browser, designed
+            to work with Precorded video. OZU Studio lets people playback,
+            search, share, and curate video in a whole new way.
+          </p>
+          <a href="#" class="signup-button">Sign Up for Beta Access</a>
+        </div>
+      </section>
+
+      <script>
+        // Set background image directly via JavaScript without delay
+        document.addEventListener("DOMContentLoaded", function () {
+          var headerSection = document.querySelector(".about-header");
+          var signupSection = document.querySelector(".signup-section");
+          headerSection.style.backgroundImage =
+            'url("img/about-hero-image-2.jpeg")';
+          signupSection.style.backgroundImage =
+            'url("img/about-hero-image.jpeg")';
+        });
+      </script>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
