@@ -429,11 +429,11 @@ nav::before {
 }
 
 .section-heading {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: white;
   text-align: center;
   margin-bottom: 60px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* ================ INTRO SECTION ================ */
@@ -649,17 +649,18 @@ nav::before {
 }
 
 .about-header {
-  padding: 120px 0 60px;
+  padding: 200px 0 120px;
   text-align: center;
   position: relative;
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
   transition: all var(--transition-slow);
   background-image: url("../img/about-hero-image-2.jpeg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
   margin-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .about-header-content {
@@ -686,7 +687,8 @@ nav::before {
 }
 
 .about-section {
-  margin-bottom: 120px;
+  margin-bottom: 240px;
+  margin-top: 120px;
 }
 
 .values-grid {
@@ -696,48 +698,80 @@ nav::before {
 }
 
 .value-card {
-  background: var(--color-bg-alt);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.03);
-  transition: all var(--transition-slow);
-  padding: 40px 20px 40px 20px;
-}
-
-.value-card:hover {
-  transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 2rem;
 }
 
 .card-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.card-icon {
-  font-size: 32px;
+  margin-bottom: 1.5rem;
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
+  background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0.7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0;
+  line-height: 1.2;
 }
 
 .card-content {
   font-size: 1.1rem;
-  line-height: 1.6;
-  opacity: 0.85;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 0;
+}
+
+.card-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-title),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.value-card:hover .card-gradient {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    gap: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
 }
 
 /* Timeline */
+.timeline-section {
+  margin-bottom: 120px;
+}
+
+.timeline-section .section-heading {
+  margin-bottom: 0px;
+}
+
 .timeline {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 160px 0;
 }
 
 .timeline::after {
@@ -830,7 +864,7 @@ nav::before {
 .timeline-content p {
   margin: 0;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-secondary);
 }
 
 .timeline-content p + p {
@@ -945,6 +979,7 @@ nav::before {
   display: flex;
   gap: 8rem;
   margin-bottom: 4rem;
+  justify-content: center;
 }
 
 .footer-links {
@@ -960,7 +995,7 @@ nav::before {
 }
 
 .footer-links a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-secondary);
 }
 
 .footer-social {
@@ -976,7 +1011,7 @@ nav::before {
 }
 
 .footer-social a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-secondary);
 }
 
 .footer-legal {
@@ -984,6 +1019,7 @@ nav::before {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.4);
   font-size: 0.875rem;
+  text-align: center;
 }
 
 .footer-legal a {
