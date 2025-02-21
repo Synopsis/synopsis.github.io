@@ -8,20 +8,13 @@
       name="description"
       content="On-scroll animations for perspective image grids with different layouts."
     />
-    <meta
-      name="keywords"
-      content="on scroll animation, 3d, image grid, perspective, gsap, javascript, css grid"
-    />
-    <meta name="author" content="Codrops" />
-
+    <meta name="author" content="OZU" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- <link rel="stylesheet" href="https://use.typekit.net/hky5sxh.css"> -->
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <script>
@@ -46,16 +39,24 @@
           "Please view this demo in a modern browser that supports CSS Variables."
         );
     </script>
-    <!-- <script src="//tympanus.net/codrops/adpacks/analytics.js"></script> -->
   </head>
   <body class="loading">
     <nav>
-      <img class="logo" src="img/ozu-logo.png" alt="OZU" />
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Sign Up</a></li>
-      </ul>
+      <div class="nav-container">
+        <div class="nav-start">
+          <img class="logo" src="img/ozu-logo.png" alt="OZU" />
+        </div>
+
+        <div class="nav-center">
+          <a href="index.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+
+        <div class="nav-end">
+          <a href="#" class="nav-link">Log In</a>
+          <button class="button button--nav">Sign Up</button>
+        </div>
+      </div>
     </nav>
 
     <main>
@@ -80,6 +81,7 @@
       <section class="content content--spacing section--precording">
         <div class="grid">
           <div class="grid-wrap">
+            <!-- Grid items with all 36 cinematography terms -->
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -143,7 +145,6 @@
               ></div>
               <span class="grid__item-label">Key Light</span>
             </div>
-
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -207,7 +208,6 @@
               ></div>
               <span class="grid__item-label">High Angle</span>
             </div>
-
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -271,7 +271,6 @@
               ></div>
               <span class="grid__item-label">Jump Cut</span>
             </div>
-
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -337,55 +336,55 @@
             </div>
           </div>
         </div>
-        <div class="content__title content__title--right">
-          <h3 style="margin-bottom: 0">Fluent in film</h3>
-          <p class="content__description">
-            OZU understands what makes up stories. From dialogue and
-            cinematography to characters and events.
-          </p>
+        <div class="content__title content__title--film">
+          <div class="content__title content__title--film">
+            <div class="content__title--film-group">
+              <h3>Fluent in film</h3>
+              <p>
+                OZU understands what makes up stories. From dialogue and
+                cinematography to characters and events.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="content section--themes">
         <h3 class="section-heading">So you can find what's in your head</h3>
-
-        <!-- The grid container is set to relative positioning -->
-        <div class="grid" style="position: relative">
-          <!-- Left side labels -->
+        <div class="grid">
+          <!-- Row labels -->
           <div class="row-label row-label--left row-label--1">
             Challengers Shot
           </div>
-          <div class="row-label row-label--left row-label--2">FKA Twigs</div>
-          <div class="row-label row-label--left row-label--3">
-            People looking up
-          </div>
-          <div class="row-label row-label--left row-label--4">
-            Breaking the 4th wall
-          </div>
-          <div class="row-label row-label--left row-label--5">Dog</div>
-          <div class="row-label row-label--left row-label--6">
-            Scenes with Tanya
-          </div>
-
-          <!-- Right side labels -->
           <div class="row-label row-label--right row-label--1">in Nike Ads</div>
+          <div class="row-label row-label--left row-label--2">FKA Twigs</div>
           <div class="row-label row-label--right row-label--2">
             in Severance
           </div>
+          <div class="row-label row-label--left row-label--3">
+            People looking up
+          </div>
           <div class="row-label row-label--right row-label--3">in NOPE</div>
+          <div class="row-label row-label--left row-label--4">
+            Breaking the 4th wall
+          </div>
           <div class="row-label row-label--right row-label--4">
             in The Office
           </div>
+          <div class="row-label row-label--left row-label--5">Dog</div>
           <div class="row-label row-label--right row-label--5">
             in The Royal Tenenbaums
+          </div>
+          <div class="row-label row-label--left row-label--6">
+            Scenes with Tanya
           </div>
           <div class="row-label row-label--right row-label--6">
             in The White Lotus
           </div>
 
-          <!-- The grid wrap containing all grid items -->
+          <!-- Film strips grid -->
           <div id="film-strips" class="grid-wrap">
-            <!-- NIKE -->
+            <!-- Nike -->
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -442,7 +441,8 @@
                 "
               ></div>
             </div>
-            <!-- Severence -->
+
+            <!-- Severance -->
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -467,7 +467,6 @@
                 "
               ></div>
             </div>
-
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -476,7 +475,6 @@
                 "
               ></div>
             </div>
-
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -485,7 +483,6 @@
                 "
               ></div>
             </div>
-
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -494,7 +491,6 @@
                 "
               ></div>
             </div>
-
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -504,7 +500,7 @@
               ></div>
             </div>
 
-            <!-- Nope -->
+            <!-- NOPE -->
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -606,7 +602,7 @@
               ></div>
             </div>
 
-            <!-- RoyalTenenbaums -->
+            <!-- Royal Tenenbaums -->
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -664,7 +660,7 @@
               ></div>
             </div>
 
-            <!-- WhiteLotus -->
+            <!-- White Lotus -->
             <div class="grid__item">
               <div
                 class="grid__item-inner"
@@ -796,7 +792,7 @@
               Precord your video in OZU to build your own libraries for yourself
               or your team.
             </p>
-            <p>Run OZU’s AI models locally on Apple Silicon.</p>
+            <p>Run OZU's AI models locally on Apple Silicon.</p>
           </div>
           <div class="media-half">
             <div class="media-container">
@@ -806,53 +802,30 @@
         </div>
       </section>
 
-      <section
-        class="outro"
-        style="
-          max-width: 56rem;
-          margin: 0 auto;
-          text-align: center;
-          padding-top: 12rem;
-        "
-      >
-        <div style="padding-bottom: 8rem">
-          <img src="img/ozu-logo.png" />
-          <p style="font-size: 2rem; color: #fff">the story is yours</p>
+      <section class="outro">
+        <div class="outro__logo-container">
+          <img src="img/ozu-logo.png" alt="OZU Logo" />
+          <p class="outro__tagline">the story is yours</p>
         </div>
-        <p class="description" style="opacity: 0.6; font-size: 1.4rem">
+        <p class="description">
           All your video — connected, hyperlinked, remixable, playable, and
           programmable in real-time — for you, for groups, and for the people!
         </p>
-        <div class="card" style="padding-top: 2rem">
-          <h3
-            class="card__title"
-            style="
-              border: solid 1px rgba(255, 255, 255, 0.2);
-              border-radius: 10px;
-              padding: 12px 24px;
-              background: #f1322e;
-            "
-          >
-            <a
-              href="http://tympanus.net/Development/ScrollBasedLayoutAnimations/"
-              >Register for Beta Access</a
-            >
+        <div class="card">
+          <h3 class="card__title">
+            <button class="button button--cta">Register for Beta Access</button>
           </h3>
         </div>
       </section>
+
       <footer class="footer">
         <div class="footer-container">
-          <div class="footer-bottom">
+          <div class="footer-content">
             <div class="footer-links">
-              <a href="#">About</a>
+              <a href="index.html">Home</a>
               <a href="#">Blog</a>
               <a href="#">Support</a>
               <a href="#">Contact</a>
-            </div>
-            <div class="footer-legal">
-              © 2025 OZU. All rights reserved.
-              <a href="#">Privacy Policy</a> ·
-              <a href="#">Terms of Service</a>
             </div>
             <div class="footer-social">
               <a href="#">Twitter</a>
@@ -860,10 +833,16 @@
               <a href="#">GitHub</a>
             </div>
           </div>
+          <div class="footer-legal">
+            <span>© 2025 OZU. All rights reserved.</span>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
         </div>
       </footer>
-      <!-- <p class="credits">Follow Us<br /><br />Linked In Twitter Insta Medium</p> -->
     </main>
+
+    <!-- Scripts -->
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/lenis.min.js"></script>

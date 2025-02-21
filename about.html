@@ -13,6 +13,7 @@
       content="OZU, AI video, filmmaking, computational cinema, video technology"
     />
     <meta name="author" content="OZU" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +22,8 @@
     />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
+
+    <!-- Critical initialization script - must be in head -->
     <script>
       document.documentElement.className = "js";
       var supportsCssVars = function () {
@@ -42,316 +45,30 @@
         alert(
           "Please view this demo in a modern browser that supports CSS Variables."
         );
-
-      // Check if background image loaded successfully
-      window.addEventListener("load", function () {
-        var headerSection = document.querySelector(".about-header");
-        var signupSection = document.querySelector(".signup-section");
-        var img = new Image();
-        img.src = "img/about-hero-image.jpeg";
-
-        img.onload = function () {
-          console.log("Background image loaded successfully");
-          headerSection.classList.add("bg-loaded");
-          signupSection.classList.add("bg-loaded");
-        };
-
-        img.onerror = function () {
-          console.error("Failed to load background image");
-          headerSection.classList.add("bg-fallback");
-          signupSection.classList.add("bg-fallback");
-        };
-      });
     </script>
-    <style>
-      .about-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 2rem;
-      }
-
-      /* Header */
-      .about-header {
-        padding: 120px 0 60px;
-        text-align: center;
-        position: relative;
-        background-image: url("img/about-hero-image-2.jpeg");
-        background-color: #1a1a22; /* Fallback background color */
-        background-size: cover;
-        background-position: center;
-        overflow: hidden;
-        margin-bottom: 60px;
-      }
-
-      /* Removed dark mask */
-
-      .about-header-content {
-        position: relative;
-        z-index: 1;
-      }
-
-      .about-header h1 {
-        font-size: clamp(3.5rem, 5vw, 5rem);
-        margin-bottom: 2rem;
-        font-weight: 800;
-        color: white;
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-      }
-
-      .about-description {
-        font-size: clamp(1.2rem, 2vw, 1.6rem);
-        max-width: 900px;
-        margin: 0 auto 3rem;
-        line-height: 1.5;
-        opacity: 0.9;
-        color: rgba(255, 255, 255, 0.95);
-        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-      }
-
-      /* Section styling */
-      .about-section {
-        margin-bottom: 120px;
-      }
-
-      .section-heading {
-        font-size: clamp(2.5rem, 4vw, 3.2rem);
-        text-align: center;
-        margin-bottom: 60px;
-        font-weight: 700;
-      }
-
-      /* Values grid */
-      .values-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 40px;
-      }
-
-      @media (min-width: 1024px) {
-        .values-grid {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-
-      .value-card {
-        background: rgba(255, 255, 255, 0.03);
-        padding: 40px;
-        transition: transform 0.3s ease;
-      }
-
-      .value-card:hover {
-        transform: translateY(-10px);
-      }
-
-      .card-header {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 24px;
-      }
-
-      .card-icon {
-        font-size: 32px;
-      }
-
-      .card-title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin: 0;
-      }
-
-      .card-content {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        opacity: 0.85;
-      }
-
-      /* Timeline */
-      .timeline {
-        position: relative;
-        max-width: 1000px;
-        margin: 0 auto;
-      }
-
-      .timeline::after {
-        content: "";
-        position: absolute;
-        width: 3px;
-        background-color: rgba(255, 255, 255, 0.08);
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -1.5px;
-      }
-
-      .timeline-item {
-        padding: 0 40px;
-        position: relative;
-        width: 50%;
-        box-sizing: border-box;
-        margin-bottom: 50px;
-      }
-
-      .timeline-item::after {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        background-color: var(--color-title);
-        border-radius: 50%;
-        top: 24px;
-        z-index: 1;
-      }
-
-      .left {
-        left: 0;
-        text-align: right;
-      }
-
-      .right {
-        left: 50%;
-      }
-
-      .left::after {
-        right: -8px;
-      }
-
-      .right::after {
-        left: -8px;
-      }
-
-      .timeline-year {
-        font-weight: 700;
-        color: var(--color-title);
-        margin-bottom: 8px;
-        font-size: 1.2rem;
-      }
-
-      .timeline-content {
-        padding: 30px;
-        background: rgba(255, 255, 255, 0.03);
-        font-size: 1.05rem;
-        line-height: 1.6;
-      }
-
-      /* Sign-up section with background */
-      .signup-section {
-        position: relative;
-        padding: 100px 0;
-        text-align: center;
-        background-image: url("img/about-hero-image.jpeg");
-        background-color: #1a1a22; /* Fallback background color */
-        background-size: cover;
-        background-position: center;
-        overflow: hidden;
-        margin-bottom: 60px;
-      }
-
-      /* Removed dark mask */
-
-      .signup-content {
-        position: relative;
-        z-index: 1;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-
-      .signup-section h2 {
-        font-size: clamp(2.5rem, 4vw, 3.5rem);
-        margin-bottom: 24px;
-        color: white;
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-      }
-
-      .signup-section p {
-        font-size: clamp(1.1rem, 2vw, 1.3rem);
-        line-height: 1.6;
-        margin-bottom: 40px;
-        color: rgba(255, 255, 255, 0.95);
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-      }
-
-      .signup-button {
-        display: inline-block;
-        background: var(--color-title);
-        color: white;
-        padding: 16px 36px;
-        font-size: 1.2rem;
-        font-weight: 600;
-        border-radius: 50px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      }
-
-      .signup-button:hover {
-        background: var(--color-link-hover);
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-      }
-
-      /* Additional styling for background image states */
-      .bg-loaded {
-        /* Additional styling when background loaded successfully */
-      }
-
-      .bg-fallback {
-        background-image: none !important;
-        background: linear-gradient(135deg, #1a1a22, #2d2d3a) !important;
-      }
-
-      @media screen and (max-width: 768px) {
-        .about-header {
-          padding: 80px 0 40px;
-        }
-
-        .about-section {
-          margin-bottom: 80px;
-        }
-
-        .timeline::after {
-          left: 30px;
-        }
-
-        .timeline-item {
-          width: 100%;
-          padding-left: 60px;
-          padding-right: 20px;
-        }
-
-        .timeline-item::after {
-          left: 22px;
-        }
-
-        .left {
-          text-align: left;
-        }
-
-        .left::after {
-          right: auto;
-        }
-
-        .right {
-          left: 0;
-        }
-
-        .signup-section {
-          padding: 60px 0;
-        }
-      }
-    </style>
   </head>
-  <body class="loading">
+
+  <body>
+    <!-- Navigation -->
     <nav>
-      <img class="logo" src="img/ozu-logo.png" alt="OZU" />
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Sign Up</a></li>
-      </ul>
+      <div class="nav-container">
+        <div class="nav-start">
+          <img class="logo" src="img/ozu-logo.png" alt="OZU" />
+        </div>
+
+        <div class="nav-center">
+          <a href="index.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+
+        <div class="nav-end">
+          <a href="#" class="nav-link">Log In</a>
+          <button class="button button--nav">Sign Up</button>
+        </div>
+      </div>
     </nav>
 
+    <!-- About Header -->
     <header class="about-header">
       <div class="about-container about-header-content">
         <h1>About OZU</h1>
@@ -366,6 +83,7 @@
 
     <main>
       <div class="about-container">
+        <!-- Values Section -->
         <section class="about-section">
           <h2 class="section-heading">Things we ❤️</h2>
           <div class="values-grid">
@@ -407,6 +125,7 @@
           </div>
         </section>
 
+        <!-- Journey Timeline Section -->
         <section class="about-section">
           <h2 class="section-heading">Our Journey</h2>
           <div class="timeline">
@@ -478,9 +197,10 @@
         </section>
       </div>
 
+      <!-- Sign-up Section -->
       <section class="signup-section">
         <div class="signup-content">
-          <h2>OZU Studio</h2>
+          <h2>Join OZU Studio Beta</h2>
           <p>
             Our latest product is for a wider audience - OZU Studio - and is
             live in beta now. It's an AI video player in the browser, designed
@@ -490,20 +210,29 @@
           <a href="#" class="signup-button">Sign Up for Beta Access</a>
         </div>
       </section>
-
-      <script>
-        // Set background image directly via JavaScript without delay
-        document.addEventListener("DOMContentLoaded", function () {
-          var headerSection = document.querySelector(".about-header");
-          var signupSection = document.querySelector(".signup-section");
-          headerSection.style.backgroundImage =
-            'url("img/about-hero-image-2.jpeg")';
-          signupSection.style.backgroundImage =
-            'url("img/about-hero-image.jpeg")';
-        });
-      </script>
     </main>
 
-    <script src="js/index.js"></script>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Support</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="footer-social">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+        <div class="footer-legal">
+          <span>© 2025 OZU. All rights reserved.</span>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
