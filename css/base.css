@@ -385,8 +385,8 @@ nav::before {
 
 .content__title--film p {
   max-width: 32rem;
-  font-size: 1.5rem;
-  line-height: 1.6;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 .content__description--film {
@@ -433,7 +433,7 @@ nav::before {
   color: white;
   text-align: center;
   margin-bottom: 60px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* ================ INTRO SECTION ================ */
@@ -507,8 +507,8 @@ nav::before {
   left: 0;
   background: linear-gradient(
     to right,
-    rgba(14, 14, 14, 0.95) 0%,
-    rgba(14, 14, 14, 0.7) 50%,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(14, 14, 14, 0.8) 50%,
     rgba(14, 14, 14, 0) 100%
   );
 }
@@ -517,8 +517,8 @@ nav::before {
   right: 0;
   background: linear-gradient(
     to left,
-    rgba(14, 14, 14, 0.95) 0%,
-    rgba(14, 14, 14, 0.7) 50%,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(14, 14, 14, 0.8) 50%,
     rgba(14, 14, 14, 0) 100%
   );
 }
@@ -526,9 +526,9 @@ nav::before {
 .row-label {
   position: absolute;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   z-index: 10;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
 }
 
 .row-label--left {
@@ -588,6 +588,7 @@ nav::before {
 .content-half {
   flex: 0 0 40%;
   padding: 2rem;
+  max-width: 500px;
 }
 
 .media-half {
@@ -596,21 +597,21 @@ nav::before {
 }
 
 .feature-row h3 {
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-size: 1.6rem;
+  font-weight: 500;
   color: white;
   margin-bottom: 1.5rem;
-  text-transform: uppercase;
   line-height: 1.1;
   position: relative;
 }
 
 .feature-row p {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
   margin-bottom: 2rem;
   max-width: 500px;
+  font-weight: 400;
 }
 
 .media-container {
@@ -677,13 +678,12 @@ nav::before {
 }
 
 .about-description {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: 1.6rem;
   max-width: 900px;
   margin: 0 auto 3rem;
-  line-height: 1.5;
-  opacity: 0.9;
-  color: rgba(255, 255, 255, 0.95);
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  line-height: 1.7;
+  color: var(--color-text);
+  font-weight: 500;
 }
 
 .about-section {
@@ -691,19 +691,22 @@ nav::before {
   margin-top: 120px;
 }
 
+.about-section .section-heading {
+  margin-bottom: 1.5rem;
+}
+
 .values-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1.5rem;
 }
 
 .value-card {
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.03);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 2rem;
 }
 
@@ -712,19 +715,17 @@ nav::before {
 }
 
 .card-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0.7));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  font-weight: 500;
   margin: 0;
   line-height: 1.2;
 }
 
 .card-content {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: var(--color-text-secondary);
+  font-weight: 400;
   margin-bottom: 0;
 }
 
@@ -771,7 +772,7 @@ nav::before {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 160px 0;
+  padding: 120px 0;
 }
 
 .timeline::after {
@@ -818,10 +819,15 @@ nav::before {
 
 .timeline-year {
   color: var(--color-title);
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-weight: 500;
+  font-size: 1.2rem;
   margin-bottom: 16px;
   line-height: 1;
+}
+
+.timeline p {
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 /* Styling for left items */
@@ -1049,7 +1055,7 @@ nav::before {
   display: grid;
   place-items: center;
   margin: 40vh 0;
-  max-width: 56rem;
+  max-width: 48rem;
   margin: 0 auto;
   text-align: center;
   padding-top: 12rem;
@@ -1066,7 +1072,9 @@ nav::before {
 
 .outro .description {
   opacity: 0.6;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .card__title a {
