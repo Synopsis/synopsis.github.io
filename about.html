@@ -54,13 +54,11 @@
       <div class="nav-container">
         <div class="nav-start">
           <img class="logo" src="img/ozu-logo.png" alt="OZU" />
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Product</a>
+            <a href="about.html" class="nav-link">About Us</a>
+          </div>
         </div>
-
-        <div class="nav-center">
-          <a href="index.html" class="nav-link">Product</a>
-          <a href="about.html" class="nav-link">About Us</a>
-        </div>
-
         <div class="nav-end">
           <a href="#" class="nav-link">Log In</a>
           <button class="button button--nav">Sign Up</button>
@@ -68,134 +66,175 @@
       </div>
     </nav>
 
-    <!-- About Header -->
-    <header class="about-header">
-      <div class="about-container about-header-content">
-        <p class="about-description">
-          OZU builds models and products that help people see and capture the
-          world like a filmmaker. We're a remote-first video AI startup based in
-          Brooklyn NY and backed by angels, VCs, and entrepreneurs from Figma,
-          Atlassian, Runway, NVIDIA, and Maximum Effort.
-        </p>
-      </div>
-    </header>
-
     <main>
-      <div class="about-container">
-        <!-- Values Section -->
-        <section class="about-section">
-          <h2 class="section-heading">
-            Things we <span class="heart-icon">❤️</span>
-          </h2>
-          <div class="values-grid">
-            <div class="value-card">
-              <div class="card-header">
-                <h3 class="card-title">Film and Video Making Craft</h3>
-              </div>
-              <p class="card-content">
-                We believe in the wisdom of the experts that craft stories for
-                film, tv, and streaming. Their techniques and knowledge guide
-                our innovations.
+      <section class="about-header">
+        <div class="about-header-content">
+          <div class="about-layout">
+            <div class="about-text">
+              <h1 class="section-title">Who We Are</h1>
+              <p class="about-description">
+                OZU builds models and products that help people see and capture
+                the world like a filmmaker.
+              </p>
+              <p class="about-description">
+                We're a remote-first video AI startup based in Brooklyn NY and
+                backed by angels, VCs, and entrepreneurs from Figma, Atlassian,
+                Runway, NVIDIA, and Maximum Effort.
               </p>
             </div>
-
-            <div class="value-card">
-              <div class="card-header">
-                <h3 class="card-title">Creative Flow</h3>
+            <!-- TODO: replace with 1 image, just testing -->
+            <div class="staggered-images">
+              <div class="image-container image-top">
+                <img
+                  src="../img/about-hero-image-2.jpeg"
+                  alt="OZU filmmaking visualization 1"
+                  loading="lazy"
+                  width="600"
+                  height="400"
+                />
               </div>
-              <p class="card-content">
-                The feeling we get while making, in particular when we care
-                about what we're making. We design our tools to enhance and
-                maintain this state.
-              </p>
-            </div>
-
-            <div class="value-card">
-              <div class="card-header">
-                <h3 class="card-title">Long-form Visual Storytelling</h3>
+              <div class="image-container image-middle">
+                <img
+                  src="../img/about-hero-image-2.jpeg"
+                  alt="OZU filmmaking visualization 2"
+                  loading="lazy"
+                  width="600"
+                  height="400"
+                />
               </div>
-              <p class="card-content">
-                As a mainstream skill all people deserve. Why can't the photo
-                album of the future be an episodic series? That's the future we
-                want to manifest.
-              </p>
+              <div class="image-container image-bottom">
+                <img
+                  src="../img/about-hero-image-2.jpeg"
+                  alt="OZU filmmaking visualization 3"
+                  loading="lazy"
+                  width="600"
+                  height="400"
+                />
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Journey Timeline Section -->
-        <section class="timeline-section">
-          <h2 class="section-heading">Our Journey</h2>
-          <div class="timeline">
-            <div class="timeline-item left">
-              <div class="timeline-content">
-                <div class="timeline-year">The Beginning</div>
-                <p>
-                  We're long-time computational cinema nerds obsessed with
-                  building creative tools. We love real-time video, creative
-                  flow, and think there's so much more that can be unlocked by
-                  technology.
+      <section class="values-section">
+        <div class="values-layout">
+          <div class="values-image">
+            <img
+              src="../img/about-hero-image-3.jpeg"
+              alt="OZU filmmaking philosophy"
+            />
+          </div>
+          <div class="values-content">
+            <h2 class="section-title">We Value</h2>
+            <div class="values-cards">
+              <div class="value-card">
+                <div class="card-header">
+                  <h3 class="card-title">Film and Video Making Craft</h3>
+                </div>
+                <p class="card-content">
+                  We believe in the wisdom of the experts that craft stories for
+                  film, tv, and streaming. Their techniques and knowledge guide
+                  our innovations.
                 </p>
               </div>
-            </div>
 
-            <div class="timeline-item right">
-              <div class="timeline-content">
-                <div class="timeline-year">2020</div>
-                <p>
-                  We trained and deployed our own ML models to understand
-                  cinematography and editing. We launched projects for HBO and
-                  Michael Kors, like connecting HBO's episodic archives to
-                  cameras and video walls so users could move and speak and see
-                  matching shots playback from HBO's library.
-                </p>
-                <p>
-                  We also turned a live Michael Kors runway show into 400 edited
-                  videos with individual Final Cut Pro project files ready to go
-                  so editors could fine tune them.
+              <div class="value-card">
+                <div class="card-header">
+                  <h3 class="card-title">Creative Flow</h3>
+                </div>
+                <p class="card-content">
+                  The feeling we get while making, in particular when we care
+                  about what we're making. We design our tools to enhance and
+                  maintain this state.
                 </p>
               </div>
-            </div>
 
-            <div class="timeline-item left">
-              <div class="timeline-content">
-                <div class="timeline-year">2023</div>
-                <p>
-                  We released the Precorder - a Mac App for running OZU models
-                  locally on Apple Silicon to turn huge video archives into
-                  structured data. With it, users could take 1000 hours of
-                  video, and in a couple days, without spending money on
-                  compute, they could search through, edit with, and create
-                  videos from their archive.
-                </p>
-                <p>
-                  We demoed the Precorder in Feb 2023 live at Figma AI in NYC
-                  which led to a new round of founding and design partners.
-                  Public demos at USV's Art and AI, and Lighspeed's Generative
-                  NYC confirmed that watching video search and curation live -
-                  across huge libraries - is something the world needs to be
-                  able to do.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item right">
-              <div class="timeline-content">
-                <div class="timeline-year">Today</div>
-                <p>
-                  Our latest product is for a wider audience - OZU Studio - and
-                  is live in beta now. It's an AI video player in the browser,
-                  designed to work with Precorded video. OZU Studio lets people
-                  playback, search, share, and curate video in a whole new way.
-                  All sorts of users, thinking aloud with video.
+              <div class="value-card">
+                <div class="card-header">
+                  <h3 class="card-title">Long-form Visual Storytelling</h3>
+                </div>
+                <p class="card-content">
+                  As a mainstream skill all people deserve. Why can't the photo
+                  album of the future be an episodic series? That's the future
+                  we want to manifest.
                 </p>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <!-- Sign-up Section -->
+      <section class="timeline-section">
+        <div class="timeline-header">
+          <!-- <h2 class="section-title">Our Journey</h2> -->
+        </div>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="timeline-year">The Beginning</div>
+              <p>
+                We're long-time computational cinema nerds obsessed with
+                building creative tools. We love real-time video, creative flow,
+                and think there's so much more that can be unlocked by
+                technology.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="timeline-year">2020</div>
+              <p>
+                We trained and deployed our own ML models to understand
+                cinematography and editing. We launched projects for HBO and
+                Michael Kors, like connecting HBO's episodic archives to cameras
+                and video walls so users could move and speak and see matching
+                shots playback from HBO's library.
+              </p>
+              <p>
+                We also turned a live Michael Kors runway show into 400 edited
+                videos with individual Final Cut Pro project files ready to go
+                so editors could fine tune them.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="timeline-year">2023</div>
+              <p>
+                We released the Precorder - a Mac App for running OZU models
+                locally on Apple Silicon to turn huge video archives into
+                structured data. With it, users could take 1000 hours of video,
+                and in a couple days, without spending money on compute, they
+                could search through, edit with, and create videos from their
+                archive.
+              </p>
+              <p>
+                We demoed the Precorder in Feb 2023 live at Figma AI in NYC
+                which led to a new round of founding and design partners. Public
+                demos at USV's Art and AI, and Lighspeed's Generative NYC
+                confirmed that watching video search and curation live - across
+                huge libraries - is something the world needs to be able to do.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="timeline-year">Today</div>
+              <p>
+                Our latest product is for a wider audience - OZU Studio - and is
+                live in beta now. It's an AI video player in the browser,
+                designed to work with Precorded video. OZU Studio lets people
+                playback, search, share, and curate video in a whole new way.
+                All sorts of users, thinking aloud with video.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="signup-section">
         <div class="signup-content">
           <h2>Join OZU Studio Beta</h2>
