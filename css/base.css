@@ -297,6 +297,35 @@ nav::before {
   position: relative;
 }
 
+.intro-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: rgb(146, 14, 17);
+  margin-top: 15vh;
+}
+
+.intro-text {
+  padding: 200px 100px;
+}
+
+.hero-image {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .grid--intro {
   height: 100vh;
   width: 100%;
@@ -311,36 +340,18 @@ nav::before {
   justify-content: center;
 }
 
-.grid--intro .grid__item {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.grid--intro .grid__item-inner {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Remove margin from intro when part of grid */
 .grid--intro .intro {
   margin: 0;
   height: 100vh;
 }
 
-/* Enhanced intro title positioning */
 .grid--intro .intro__title {
   padding-top: 0;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 :root {
   --grid-width: 100%;
   --grid-height: auto;
@@ -393,8 +404,37 @@ nav::before {
   left: 1.5rem;
   color: white;
   font-size: var(--text-base);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-button);
+  line-height: var(--line-height-heading);
   z-index: 2;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .intro-layout {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 0 50px;
+  }
+
+  .intro__title-sub {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-layout {
+    padding: 0 20px;
+  }
+
+  .intro__title-sub {
+    font-size: 3rem;
+  }
+
+  .hero-image {
+    margin-bottom: 2rem;
+  }
 }
 
 /* ================ CONTENT SECTIONS ================ */
@@ -423,19 +463,37 @@ nav::before {
 }
 
 .content__title--film-group {
-  max-width: 48rem;
+  max-width: 36rem;
+  background: rgba(12, 62, 67, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  aspect-ratio: 16/9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: perspective(1500px) rotateY(-4deg) scale(0.98);
+  transform-origin: center right;
+  transform-style: preserve-3d;
 }
 
 .content__title--film h3 {
-  margin-bottom: 0;
-  font-size: clamp(1.5rem, 15vw, 6.5rem);
+  margin: 0;
+  font-size: var(--text-2xl);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
   font-weight: 500;
 }
 
 .content__title--film p {
-  max-width: 32rem;
-  font-size: 1.6rem;
-  line-height: 2;
+  font-size: var(--text-base);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
+  font-weight: 400;
+  margin: 0;
 }
 
 .content__description--film {
@@ -478,15 +536,18 @@ nav::before {
 }
 
 .section-heading {
-  font-size: 3.5rem;
   color: white;
   text-align: center;
   margin-bottom: 60px;
+  font-size: var(--text-2xl);
   font-weight: 500;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-heading);
 }
 
 /* ================ INTRO SECTION ================ */
 .section--intro {
+  position: relative;
   height: 100vh;
   margin-bottom: 15vh;
 }
@@ -506,10 +567,10 @@ nav::before {
   margin: 0 auto;
   padding-top: 20vh;
   max-width: 96rem;
-}
-
-.intro__title-sub {
-  font-size: 8rem;
+  font-size: var(--text-2xl);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
+  font-weight: 400;
   margin: 0 auto;
   color: var(--color-text);
 }
@@ -575,9 +636,11 @@ nav::before {
 .row-label {
   position: absolute;
   color: white;
-  font-size: 1.6rem;
   z-index: 10;
+  font-size: var(--text-lg);
   font-weight: 500;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-heading);
 }
 
 .row-label--left {
@@ -646,21 +709,22 @@ nav::before {
 }
 
 .feature-row h3 {
-  font-size: 1.6rem;
+  font-size: var(--text-lg);
   font-weight: 500;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-heading);
   color: white;
   margin-bottom: 1.5rem;
-  line-height: 1.1;
   position: relative;
 }
 
 .feature-row p {
-  font-size: 1.2rem;
-  line-height: 1.7;
+  font-size: var(--text-base);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-body);
   color: var(--color-text-secondary);
   margin-bottom: 2rem;
   max-width: 500px;
-  font-weight: 400;
 }
 
 .media-container {
