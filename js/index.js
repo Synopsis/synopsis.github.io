@@ -217,7 +217,7 @@ const applyAnimation = (grid, animationType) => {
           {
             xPercent: 300,
             // ease: 'power1'
-            z: -500,
+            // z: -500,
           },
           0
         )
@@ -226,7 +226,7 @@ const applyAnimation = (grid, animationType) => {
           {
             xPercent: -300,
             // ease: 'power1'
-            z: -500,
+            // z: -500,
           },
           0
         )
@@ -245,7 +245,7 @@ const applyAnimation = (grid, animationType) => {
           {
             xPercent: -300,
             // ease: 'power1'
-            z: 500,
+            // z: 500,
           },
           0
         )
@@ -254,7 +254,7 @@ const applyAnimation = (grid, animationType) => {
           {
             xPercent: 300,
             // ease: 'power1'
-            z: 500,
+            // z: 500,
           },
           0
         );

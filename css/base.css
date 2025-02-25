@@ -637,10 +637,18 @@ nav::before {
   position: absolute;
   color: white;
   z-index: 10;
-  font-size: var(--text-lg);
+  font-size: var(--text-sm);
   font-weight: 500;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-heading);
+}
+
+.row-label-tag {
+  background: #262626 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius);
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .row-label--left {
@@ -654,27 +662,27 @@ nav::before {
 /* Vertical positioning for each row */
 .row-label--1,
 .row-label--right.row-label--1 {
-  top: 10%;
+  top: 6%;
 }
 .row-label--2,
 .row-label--right.row-label--2 {
-  top: 26%;
+  top: 21.5%;
 }
 .row-label--3,
 .row-label--right.row-label--3 {
-  top: 42%;
+  top: 37.5%;
 }
 .row-label--4,
 .row-label--right.row-label--4 {
-  top: 58%;
+  top: 53%;
 }
 .row-label--5,
 .row-label--right.row-label--5 {
-  top: 74%;
+  top: 68%;
 }
 .row-label--6,
 .row-label--right.row-label--6 {
-  top: 90%;
+  top: 84%;
 }
 
 /* ================ FEATURE SECTIONS ================ */
@@ -771,7 +779,7 @@ nav::before {
 
 .about-header {
   max-width: 1400px;
-  margin: 120px auto 30vh auto;
+  margin: 120px auto 20vh auto;
   padding: 0;
   background-color: rgb(37, 38, 39);
 }
