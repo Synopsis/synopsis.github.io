@@ -210,6 +210,11 @@ nav::before {
   flex: 2;
 }
 
+.nav-start a {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   height: 18px;
   width: auto;
@@ -464,7 +469,7 @@ nav::before {
 
 .content__title--film-group {
   max-width: 36rem;
-  background: rgba(12, 62, 67, 0.72);
+  background: rgba(61, 61, 61, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: var(--border-radius);
   padding: 2rem;
@@ -913,7 +918,7 @@ nav::before {
 
 .values-section {
   position: relative;
-  background-color: rgb(32, 32, 22);
+  /* background-color: #c36520; */
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -937,11 +942,6 @@ nav::before {
   height: 100%;
   object-fit: cover;
   display: block;
-  transform: scaleX(-1); /* TESTING IDEA */
-}
-
-.values-image:hover img {
-  transform: scale(1.05);
 }
 
 .values-content {
