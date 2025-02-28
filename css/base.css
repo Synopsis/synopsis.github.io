@@ -1,29 +1,3 @@
-/* ================ RESET & BASE STYLES ================ */
-/* Define Plain font family with all weights */
-@font-face {
-  font-family: "Plain";
-  src: url("fonts/Plain-Light-Trial.otf") format("opentype");
-  font-weight: 300; /* Light */
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Plain";
-  src: url("fonts/Plain-Regular-Trial.otf") format("opentype");
-  font-weight: 400; /* Regular */
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Plain";
-  src: url("fonts/Plain-Medium-Trial.otf") format("opentype");
-  font-weight: 500; /* Medium */
-  font-style: normal;
-  font-display: swap;
-}
-
 *,
 *::after,
 *::before {
@@ -62,7 +36,7 @@
   --grid-item-ratio: 1.5;
   --grid-width: 100%;
   --grid-height: auto;
-  --grid-gap: 1.5vw;
+  --grid-gap: 1.2vw;
   --grid-columns: 4;
   --grid-inner-scale: 1;
 
@@ -77,8 +51,7 @@ body {
   margin: 0;
   color: var(--color-text);
   background-color: var(--color-bg);
-  /* font-family: "Inter", sans-serif; */
-  font-family: "Plain", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -364,7 +337,7 @@ nav::before {
 :root {
   --grid-width: 100%;
   --grid-height: auto;
-  --grid-gap: 1.5vw;
+  --grid-gap: 1.2vw;
   --grid-columns: 4;
   --grid-item-ratio: 1.5;
   --grid-inner-scale: 1;
@@ -376,7 +349,7 @@ nav::before {
   padding: 1.5rem;
   width: 100%;
   perspective: var(--perspective);
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
 }
 
@@ -712,6 +685,8 @@ nav::before {
 /* ================ THEMES SECTION ================ */
 .section--themes {
   position: relative;
+  min-height: 140vh;
+  padding-bottom: 8vh;
 }
 
 .section--themes .section-heading {
@@ -733,58 +708,63 @@ nav::before {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  overflow: visible;
+  max-width: none;
 }
 
 .row-label-tag {
-  background: rgba(45, 45, 48, 0.8);
-  padding: 0.3rem 0.6rem;
+  background: rgba(230, 230, 230, 0.85);
+  padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
   display: inline-block;
   position: relative;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.1s ease;
   font-weight: 450;
   letter-spacing: 0;
   font-size: var(--text-sm);
-  color: rgba(255, 255, 255, 1);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: rgba(40, 40, 40, 1);
+  text-shadow: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
 }
 
 .row-label-tag:nth-of-type(3n + 1) {
-  background: rgba(230, 126, 34, 0.25);
-  color: rgba(255, 179, 102, 1);
+  background: rgba(240, 240, 240, 0.85);
+  color: rgba(50, 50, 50, 1);
 }
 
 .row-label-tag:nth-of-type(3n + 2) {
-  background: rgba(196, 60, 60, 0.25);
-  color: rgba(255, 150, 150, 1);
+  background: rgba(230, 230, 230, 0.85);
+  color: rgba(40, 40, 40, 1);
 }
 
 .row-label-tag:nth-of-type(3n + 3) {
-  background: rgba(196, 160, 82, 0.25);
-  color: rgba(250, 230, 180, 1);
+  background: rgba(220, 220, 220, 0.85);
+  color: rgba(30, 30, 30, 1);
 }
 
-/* Also update hover states for consistency */
+/* Update hover states */
 .row-label-tag:hover {
-  background: rgba(60, 60, 65, 0.85);
+  background: rgba(245, 245, 245, 0.9);
+  color: rgba(20, 20, 20, 1);
 }
 
 .row-label-tag:nth-of-type(3n + 1):hover {
-  background: rgba(230, 126, 34, 0.35);
+  background: rgba(240, 240, 240, 0.9);
 }
 
 .row-label-tag:nth-of-type(3n + 2):hover {
-  background: rgba(196, 60, 60, 0.35);
+  background: rgba(220, 220, 220, 0.9);
 }
 
 .row-label-tag:nth-of-type(3n + 3):hover {
-  background: rgba(196, 160, 82, 0.35);
+  background: rgba(200, 200, 200, 0.9);
 }
 
 /* Move tag row labels closer to screen edges */
@@ -818,12 +798,38 @@ nav::before {
 }
 
 @media (max-width: 768px) {
-  .row-label--left {
-    left: 1rem;
+  .row-label {
+    max-width: 90% !important;
+    background: rgba(14, 14, 14, 0.95);
+    z-index: 50 !important; /* Very high z-index */
   }
 
+  /* Right labels specific fixes */
   .row-label--right {
-    right: 1rem;
+    display: block !important; /* Force display */
+    visibility: visible !important; /* Force visibility */
+    opacity: 1 !important; /* Force opacity */
+    max-width: 90% !important;
+    right: 10px !important; /* Position closer to edge */
+    z-index: 100 !important; /* Even higher z-index than regular labels */
+  }
+
+  /* Target each right label individually to override any specific hiding */
+  .row-label--right.row-label--1,
+  .row-label--right.row-label--2,
+  .row-label--right.row-label--3,
+  .row-label--right.row-label--4,
+  .row-label--right.row-label--5,
+  .row-label--right.row-label--6 {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+/* Override specific rule that might be hiding the right labels */
+@media (max-width: 768px) {
+  .row-label--right {
+    display: block !important;
   }
 }
 
@@ -1129,7 +1135,6 @@ nav::before {
   max-width: 1400px;
   margin: 120px auto 10vh auto;
   padding: 0;
-  background-color: #6b4144;
 }
 
 .about-header-content {
@@ -2024,4 +2029,110 @@ nav::before {
   .values-section::before {
     display: none;
   }
+}
+
+/* Adjust the grid height to fill more vertical space */
+.section--themes .grid-wrap {
+  min-height: 140vh;
+}
+
+/* Make individual grid items larger with adjusted aspect ratio */
+.section--themes .grid__item {
+  aspect-ratio: 1.3;
+  min-height: 220px;
+}
+
+/* Add a subtle hover effect for better engagement */
+.section--themes .grid__item-inner {
+  transform: scale(1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.section--themes .grid__item-inner:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+/* Maintain responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .section--themes {
+    min-height: 130vh;
+  }
+
+  .section--themes .grid-wrap {
+    min-height: 120vh;
+  }
+
+  .section--themes .grid__item {
+    min-height: 160px;
+  }
+
+  :root {
+    --grid-gap: 1vw;
+  }
+}
+
+/* Remove the previous gradients that were covering the labels */
+.section--themes::before,
+.section--themes::after {
+  content: none; /* Disable the previous gradients */
+}
+
+/* Create a container with position relative for the grid to establish proper stacking context */
+.section--themes .grid {
+  position: relative;
+}
+
+/* Add new gradients to the grid container instead */
+.section--themes .grid::before,
+.section--themes .grid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 20%; /* Increased from 12% to 20% to extend under text */
+  pointer-events: none;
+  z-index: 1; /* Lower z-index than labels */
+}
+
+/* Left side gradient - positioned to avoid labels */
+.section--themes .grid::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(14, 14, 14, 0.95) 40%,
+    rgba(14, 14, 14, 0.7) 70%,
+    rgba(14, 14, 14, 0) 100%
+  );
+}
+
+/* Right side gradient - positioned to avoid labels */
+.section--themes .grid::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(14, 14, 14, 0.95) 40%,
+    rgba(14, 14, 14, 0.7) 70%,
+    rgba(14, 14, 14, 0) 100%
+  );
+}
+
+/* Ensure row labels are properly above with better positioning */
+.row-label {
+  z-index: 10;
+  position: absolute;
+}
+
+/* Adjust left labels to be more on the grid than the gradient */
+.row-label--left {
+  left: 3rem; /* Move labels further right to avoid gradient */
+}
+
+/* Adjust right labels to be more on the grid than the gradient */
+.row-label--right {
+  right: 3rem; /* Move labels further left to avoid gradient */
 }
