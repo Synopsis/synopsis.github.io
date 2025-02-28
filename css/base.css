@@ -622,7 +622,7 @@ nav::before {
 }
 
 .content__title--film-group {
-  max-width: 36rem;
+  max-width: 28rem;
   background: rgb(44, 44, 44);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--border-radius);
