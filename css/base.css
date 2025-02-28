@@ -14,6 +14,7 @@
   --text-2xl: 2rem; /* 36px */
   --text-3xl: 3.444rem; /* 62px */
   --text-4xl: 6rem; /* 108px */
+  --text-5xl: 8rem; /* 144px */
 
   --line-height-body: 1.3;
   --line-height-heading: 1.1;
@@ -277,21 +278,60 @@ nav::before {
   height: 100vh;
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 6rem;
   max-width: 1400px;
   margin: 0 auto;
-  background: rgb(146, 14, 17);
-  margin-top: 15vh;
+  height: 100%;
+  padding-top: 60px; /* Account for the nav bar height */
 }
 
 .intro-text {
-  padding: 8rem 8rem;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.centered-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.intro__title {
+  z-index: 100;
+  margin: 0 auto;
+  max-width: 96rem;
+  color: var(--color-text);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: var(--text-5xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .intro-layout {
+    padding: 2rem 1rem;
+    padding-top: 80px; /* Increased padding for mobile */
+  }
+
+  .intro__title {
+    font-size: calc(
+      var(--text-3xl) * 1.2
+    ); /* Increased from text-xl to text-3xl for mobile */
+  }
 }
 
 .hero-image {
@@ -312,6 +352,9 @@ nav::before {
   height: 100vh;
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid--intro .grid-wrap {
@@ -325,13 +368,6 @@ nav::before {
 .grid--intro .intro {
   margin: 0;
   height: 100vh;
-}
-
-.grid--intro .intro__title {
-  padding-top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 :root {
@@ -552,40 +588,43 @@ nav::before {
 
 .content__title--film {
   z-index: 100;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  top: 40%;
+  position: fixed !important; /* Add !important to override any potential JS */
+  height: auto;
+  width: 100%;
+  top: 50%;
   left: 50%;
-  margin: -50vh 0 0 -50vw;
+  transform: translate(
+    -50%,
+    -50%
+  ) !important; /* Override any GSAP transforms */
   padding: 0 10vw;
   display: grid;
   place-items: center;
   justify-items: end;
   text-align: left;
+  pointer-events: none;
+  /* Make sure this element isn't affected by ScrollTrigger */
+  will-change: transform;
 }
 
 .content__title--film-group {
   max-width: 36rem;
-  background: rgba(61, 61, 61, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgb(44, 44, 44);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--border-radius);
   padding: 2rem;
-  backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
   aspect-ratio: 16/9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transform: perspective(1500px) rotateY(-4deg) scale(0.98);
-  transform-origin: center right;
-  transform-style: preserve-3d;
+  pointer-events: auto;
 }
 
 .content__title--film h3 {
   margin: 0;
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   line-height: var(--line-height-heading);
   letter-spacing: var(--letter-spacing-heading);
   font-weight: 500;
@@ -595,7 +634,7 @@ nav::before {
   font-size: var(--text-base);
   line-height: var(--line-height-body);
   letter-spacing: var(--letter-spacing-body);
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -649,8 +688,11 @@ nav::before {
 /* ================ INTRO SECTION ================ */
 .section--intro {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   margin-bottom: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro {
@@ -1894,14 +1936,6 @@ nav::before {
   position: relative;
 }
 
-.content__title--film h3 {
-  margin: 0;
-  font-size: var(--text-3xl);
-  line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-heading);
-  font-weight: 500;
-}
-
 .section-heading {
   color: white;
   text-align: center;
@@ -1917,17 +1951,19 @@ nav::before {
 
 .intro__title {
   z-index: 100;
-  place-items: center;
-  display: grid;
   margin: 0 auto;
-  padding-top: 10vh;
   max-width: 96rem;
-  font-size: var(--text-3xl);
   line-height: var(--line-height-heading);
   letter-spacing: var(--letter-spacing-heading);
   font-weight: 400;
-  margin: 0 auto;
   color: var(--color-text);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: var(--text-5xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  text-align: center;
 }
 
 /* Update any mobile menu button */

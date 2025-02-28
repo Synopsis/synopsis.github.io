@@ -166,20 +166,27 @@ const applyAnimation = (grid, animationType) => {
       grid.style.setProperty("--grid-inner-scale", "0.95");
       grid.style.setProperty("--grid-item-ratio", "16.0/9.0");
 
+      const seed = 46; // Fixed seed value for deterministic randomization
+      const pseudoRandom = (min, max, index) => {
+        const value = Math.sin(seed + index * 1000) * 10000;
+        const normalized = value - Math.floor(value); // 0 to 1
+        return min + normalized * (max - min);
+      };
+
       timeline
         .set(gridWrap, {
           rotationY: 15,
         })
         .set(gridItems, {
-          z: () => gsap.utils.random(-1600, 200),
+          z: (i) => pseudoRandom(-1600, 200, i),
         })
         .fromTo(
           gridItems,
           {
-            xPercent: () => gsap.utils.random(-1000, -500),
+            xPercent: (i) => pseudoRandom(-1000, -500, i),
           },
           {
-            xPercent: () => gsap.utils.random(500, 1000),
+            xPercent: (i) => pseudoRandom(500, 1000, i),
           },
           0
         )
@@ -318,15 +325,48 @@ const applyAnimation = (grid, animationType) => {
 const scroll = () => {
   const precordingSection = document.querySelector(".section--precording");
   if (precordingSection) {
-    const filmTitleGroup = precordingSection.querySelector(
-      ".content__title--film-group"
+    // Get the film title group
+    const filmTitleDiv = precordingSection.querySelector(
+      ".content__title--film"
     );
-    if (filmTitleGroup) {
-      gsap.set(filmTitleGroup, {
-        scale: 0.9,
-        transformOrigin: "center right",
-        y: "-15vh",
+    if (filmTitleDiv) {
+      // Remove it from its parent and append it to the body
+      // This will ensure it's fixed relative to the viewport
+      document.body.appendChild(filmTitleDiv);
+
+      // Initially hide the film title
+      gsap.set(filmTitleDiv, { autoAlpha: 0 });
+
+      // No GSAP transforms needed here - let CSS handle it
+      const filmTitleGroup = filmTitleDiv.querySelector(
+        ".content__title--film-group"
+      );
+      if (filmTitleGroup) {
+        // Just set the transform origin, no other transformations
+        gsap.set(filmTitleGroup, {
+          transformOrigin: "center right",
+        });
+      }
+
+      // Create a ScrollTrigger to show/hide the film title
+      const filmPanelAnimation = gsap.timeline({
+        scrollTrigger: {
+          trigger: precordingSection.querySelector(".grid-wrap"),
+          start: "top 30%",
+          end: "top 25%",
+          scrub: 0.2,
+        },
       });
+
+      // animation timeline with fade in and fade out
+      filmPanelAnimation
+        .fromTo(
+          filmTitleDiv,
+          { autoAlpha: 0 },
+          { autoAlpha: 1, duration: 0.15 },
+          0
+        )
+        .to(filmTitleDiv, { autoAlpha: 0, duration: 0.15 }, 0.15);
     }
   }
 
