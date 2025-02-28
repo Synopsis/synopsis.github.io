@@ -420,10 +420,12 @@ nav::before {
 
 .grid__item-label {
   position: absolute;
-  bottom: 1rem;
-  left: 1.5rem;
+  /* tricky since text gets cut off at different screen sizes */
+  bottom: 2rem;
+  left: 3rem;
+  right: 3rem;
   color: white;
-  font-size: var(--text-base);
+  font-size: var(--text-xs);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-button);
