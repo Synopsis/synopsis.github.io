@@ -1652,8 +1652,9 @@ nav::before {
 
 .footer-links {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .footer-links a {
@@ -1743,6 +1744,14 @@ nav::before {
   .footer-legal a {
     margin-left: 0;
     margin: 0.25rem 0;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    gap: 1.5rem;
   }
 }
 
@@ -2187,4 +2196,45 @@ nav::before {
 /* Adjust right labels to be more on the grid than the gradient */
 .row-label--right {
   right: 3rem; /* Move labels further left to avoid gradient */
+}
+
+/* Maintain button appearance for visited links */
+.button:visited {
+  color: inherit !important; /* Keep the original text color */
+}
+
+.button.button--nav:visited {
+  color: #fff !important; /* Keep white text */
+  background-color: #f33d38 !important; /* Keep the red background */
+  opacity: 1 !important;
+}
+
+a.button.button--cta:visited {
+  color: #fff !important; /* Keep white text */
+  background-color: #f33d38 !important; /* Keep the red background */
+  opacity: 1 !important;
+}
+
+a.signup-button:visited {
+  color: #fff !important; /* Keep white text */
+  background-color: #f33d38 !important; /* Keep the red background */
+  opacity: 1 !important;
+}
+
+.button:active,
+.button.button--nav:active,
+a.button.button--cta:active,
+a.signup-button:active {
+  color: #fff !important;
+  background-color: #f33d38 !important;
+  opacity: 1 !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.button.button--nav:hover,
+a.button.button--cta:hover,
+a.signup-button:hover {
+  color: #fff !important;
+  background-color: #f33d38 !important;
+  opacity: 0.9 !important; /* Slight opacity change on hover for feedback */
 }
