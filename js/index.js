@@ -32,7 +32,7 @@ const initIntroAnimation = () => {
         scrollTrigger: {
           trigger: pinWrap,
           start: "top top",
-          end: "+=50vh",
+          end: "+=30vh",
           pin: true,
           pinSpacing: true,
           scrub: 1.5,
@@ -43,7 +43,7 @@ const initIntroAnimation = () => {
         gridItems,
         {
           opacity: 1,
-          ease: "power1.inOut", // Smoother easing
+          ease: "power1.inOut",
         },
         {
           opacity: 0,
@@ -65,8 +65,8 @@ const applyAnimation = (grid, animationType) => {
     defaults: { ease: "none" },
     scrollTrigger: {
       trigger: gridWrap,
-      start: "top bottom+=5%",
-      end: "bottom top-=5%",
+      start: "top bottom+=10%",
+      end: "bottom top",
       scrub: true,
     },
   });
@@ -74,12 +74,12 @@ const applyAnimation = (grid, animationType) => {
   switch (animationType) {
     case "wheel":
       // Set some CSS related style values
-      grid.style.setProperty("--grid-width", "50%");
+      grid.style.setProperty("--grid-width", "45%");
       grid.style.setProperty("--perspective", "3000px");
       grid.style.setProperty("--grid-item-ratio", "16.0/9.0");
       grid.style.setProperty("--grid-columns", "3");
-      grid.style.setProperty("--grid-inner-scale", "1.0");
-      grid.style.setProperty("--grid-gap", "1vw");
+      grid.style.setProperty("--grid-inner-scale", "0.95");
+      grid.style.setProperty("--grid-gap", "0.75vw");
 
       timeline
         .set(gridWrap, {
@@ -160,15 +160,15 @@ const applyAnimation = (grid, animationType) => {
         );
       break;
 
-    case "type1":
+    case "flock":
       // Set some CSS related style values
-      grid.style.setProperty("--perspective", "1000px");
-      grid.style.setProperty("--grid-inner-scale", "1.0");
+      grid.style.setProperty("--perspective", "800px");
+      grid.style.setProperty("--grid-inner-scale", "0.95");
       grid.style.setProperty("--grid-item-ratio", "16.0/9.0");
 
       timeline
         .set(gridWrap, {
-          rotationY: 25,
+          rotationY: 15,
         })
         .set(gridItems, {
           z: () => gsap.utils.random(-1600, 200),
@@ -197,7 +197,7 @@ const applyAnimation = (grid, animationType) => {
 
     case "horizontal-rails":
       // Set some CSS related style values
-      grid.style.setProperty("--grid-width", "150%");
+      grid.style.setProperty("--grid-width", "130%");
       grid.style.setProperty("--grid-columns", "7");
       grid.style.setProperty("--grid-gap", 0);
       grid.style.setProperty("--grid-item-ratio", "16.0/9.0");
@@ -316,20 +316,46 @@ const applyAnimation = (grid, animationType) => {
 
 // Apply animations to each grid
 const scroll = () => {
+  const precordingSection = document.querySelector(".section--precording");
+  if (precordingSection) {
+    const filmTitleGroup = precordingSection.querySelector(
+      ".content__title--film-group"
+    );
+    if (filmTitleGroup) {
+      gsap.set(filmTitleGroup, {
+        scale: 0.9,
+        transformOrigin: "center right",
+        y: "-15vh",
+      });
+    }
+  }
+
   // Select all grids EXCEPT the intro grid
   const grids = document.querySelectorAll(".grid:not(.grid--intro)");
 
   grids.forEach((grid, i) => {
+    if (grid.closest(".section--precording")) {
+      applyAnimation(grid, "flock");
+
+      ScrollTrigger.getAll().forEach((st) => {
+        if (st.vars.trigger === grid.querySelector(".grid-wrap")) {
+          st.vars.end = "bottom center"; // End animation sooner
+        }
+      });
+
+      return; // Skip the default animation assignment
+    }
+
     let animationType;
     switch (i % 6) {
       case 0:
-        animationType = "type1";
+        animationType = "flock";
         break;
       case 1:
         animationType = "horizontal-rails";
         break;
       case 2:
-        animationType = "type1";
+        animationType = "flock";
         break;
       case 3:
         animationType = "horizontal-rails";
