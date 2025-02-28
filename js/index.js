@@ -27,29 +27,36 @@ const initIntroAnimation = () => {
     const pinWrap = introGrid.closest(".pin-wrap");
     const gridItems = introGrid.querySelectorAll(".grid__item");
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: pinWrap,
-          start: "top top",
-          end: "+=30vh",
-          pin: true,
-          pinSpacing: true,
-          scrub: 1.5,
-          toggleActions: "play reverse play reverse",
-        },
-      })
-      .fromTo(
-        gridItems,
-        {
-          opacity: 1,
-          ease: "power1.inOut",
-        },
-        {
-          opacity: 0,
-          ease: "power1.inOut",
-        }
-      );
+    // Check if screen width is greater than 768px (tablet/desktop)
+    if (window.innerWidth > 768) {
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: pinWrap,
+            start: "top top",
+            end: "+=30vh",
+            pin: true,
+            pinSpacing: true,
+            scrub: 1.5,
+            toggleActions: "play reverse play reverse",
+          },
+        })
+        .fromTo(
+          gridItems,
+          {
+            opacity: 1,
+            ease: "power1.inOut",
+          },
+          {
+            opacity: 0,
+            ease: "power1.inOut",
+          }
+        );
+    } else {
+      // For mobile, just set a static appearance without animation
+      gsap.set(pinWrap, { height: "auto", minHeight: "60vh" });
+      gsap.set(introGrid, { height: "auto" });
+    }
   }
 };
 
@@ -411,10 +418,41 @@ const scroll = () => {
   });
 };
 
+// Add a resize event listener to handle screen size changes
+const handleResize = () => {
+  // Store the initial state
+  let wasMobile = window.innerWidth <= 768;
+
+  window.addEventListener("resize", () => {
+    const isMobile = window.innerWidth <= 768;
+
+    // Only reinitialize if crossing the breakpoint
+    if (wasMobile !== isMobile) {
+      // Kill any existing ScrollTrigger instances for the intro section
+      const introGrid = document.querySelector(".grid--intro");
+      if (introGrid) {
+        const pinWrap = introGrid.closest(".pin-wrap");
+        ScrollTrigger.getAll().forEach((trigger) => {
+          if (trigger.vars.trigger === pinWrap) {
+            trigger.kill();
+          }
+        });
+      }
+
+      // Reinitialize the intro animation
+      initIntroAnimation();
+
+      // Update the wasMobile variable for the next resize event
+      wasMobile = isMobile;
+    }
+  });
+};
+
 // Preload images, initialize smooth scrolling, apply scroll-triggered animations, and remove loading class from body
 preloadImages(".grid__item-inner").then(() => {
   initSmoothScrolling();
   initIntroAnimation();
+  handleResize(); // Add the resize handler
   scroll();
   document.body.classList.remove("loading");
 });
