@@ -479,9 +479,11 @@ nav::before {
   }
 
   .intro__title {
-    font-size: calc(var(--text-xl) * 1.2);
-    padding-top: 0;
-    margin-top: 2rem;
+    font-size: var(--text-3xl);
+    padding: 0 15px;
+    word-wrap: break-word;
+    line-height: 1;
+    max-width: 100%;
   }
 
   /* Ensure grid items are visible on mobile */
@@ -2240,48 +2242,44 @@ a.signup-button:hover {
 }
 
 @media only screen and (max-width: 430px) {
-  */ :root {
-    --grid-columns: 1; /* Force single column for very narrow screens */
-    --grid-item-ratio: 1.1; /* More square ratio for single column */
-    --grid-gap: 2vw; /* Larger gap as percentage of width */
+  .section--intro {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px; /* Account for the nav bar */
   }
 
-  /* Ensure content fits within viewport */
-  .grid {
-    padding: 0.5rem;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+  .pin-wrap {
+    height: auto !important;
+    min-height: auto !important;
+    position: relative !important;
+    transform: none !important;
+    margin-top: 0; /* Remove the negative margin */
   }
 
-  /* Make grid items larger and more visible */
-  .grid__item {
-    min-height: 140px;
-    width: 100% !important;
-    margin-bottom: 2vw;
+  .grid--intro {
+    height: auto !important;
   }
 
-  /* Adjust intro section for iPhone width */
-  .intro__title {
-    font-size: var(--text-lg);
-    padding: 0 10px;
-    word-wrap: break-word;
-  }
-
-  /* Ensure film title is visible */
-  .content__title--film-group {
-    width: 90%;
-    max-width: 260px;
+  .intro-layout {
     padding: 1rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
   }
 
-  .content__title--film h3 {
-    font-size: var(--text-lg);
-  }
-
-  /* Adjust row labels for iPhone width */
-  .row-label {
-    max-width: 80%;
-    font-size: var(--text-xs);
+  .intro__title {
+    font-size: calc(var(--text-3xl) * 1.2) !important;
+    line-height: 1 !important;
+    padding: 0 15px !important;
+    word-wrap: break-word !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 100 !important;
   }
 }
