@@ -2238,3 +2238,50 @@ a.signup-button:hover {
   background-color: #f33d38 !important;
   opacity: 0.9 !important; /* Slight opacity change on hover for feedback */
 }
+
+@media only screen and (max-width: 430px) {
+  */ :root {
+    --grid-columns: 1; /* Force single column for very narrow screens */
+    --grid-item-ratio: 1.1; /* More square ratio for single column */
+    --grid-gap: 2vw; /* Larger gap as percentage of width */
+  }
+
+  /* Ensure content fits within viewport */
+  .grid {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Make grid items larger and more visible */
+  .grid__item {
+    min-height: 140px;
+    width: 100% !important;
+    margin-bottom: 2vw;
+  }
+
+  /* Adjust intro section for iPhone width */
+  .intro__title {
+    font-size: var(--text-lg);
+    padding: 0 10px;
+    word-wrap: break-word;
+  }
+
+  /* Ensure film title is visible */
+  .content__title--film-group {
+    width: 90%;
+    max-width: 260px;
+    padding: 1rem;
+  }
+
+  .content__title--film h3 {
+    font-size: var(--text-lg);
+  }
+
+  /* Adjust row labels for iPhone width */
+  .row-label {
+    max-width: 80%;
+    font-size: var(--text-xs);
+  }
+}
