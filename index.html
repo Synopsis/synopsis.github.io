@@ -939,10 +939,41 @@
             </p>
           </div>
           <div class="media-half">
-            <div class="remix-grid">
-              <div class="media-container">
-                <img src="img/re.png" />
-              </div>
+            <div class="media-container">
+              <video
+                id="video-sebastian"
+                playsinline
+                autoplay
+                muted
+                loop
+                preload="auto"
+                aria-label="Ozu demonstration"
+              >
+                <source src="video/SebastianJeremy.webm" type="video/webm" />
+                <source src="video/SebastianJeremy.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <button
+                class="unmute-button"
+                aria-label="Unmute video"
+                data-video="video-sebastian"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -960,7 +991,40 @@
           </div>
           <div class="media-half">
             <div class="media-container">
-              <img src="img/stream.png" alt="Library Interface" />
+              <video
+                id="video-adrien-import"
+                playsinline
+                autoplay
+                muted
+                loop
+                preload="auto"
+                aria-label="Ozu demonstration"
+              >
+                <source src="video/AdrienBrody.webm" type="video/webm" />
+                <source src="video/AdrienBrody.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <button
+                class="unmute-button"
+                aria-label="Unmute video"
+                data-video="video-adrien-import"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -1016,5 +1080,28 @@
     <script src="js/lenis.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script type="module" src="js/index.js"></script>
+    <script>
+      // Video unmute functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const unmuteButtons = document.querySelectorAll(".unmute-button");
+
+        unmuteButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const videoId = this.getAttribute("data-video");
+            const video = document.getElementById(videoId);
+
+            if (video.muted) {
+              video.muted = false;
+              this.classList.add("unmuted");
+              this.setAttribute("aria-label", "Mute video");
+            } else {
+              video.muted = true;
+              this.classList.remove("unmuted");
+              this.setAttribute("aria-label", "Unmute video");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

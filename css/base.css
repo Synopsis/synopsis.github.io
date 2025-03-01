@@ -216,6 +216,7 @@ nav::before {
   position: relative;
   transition: color var(--transition-fast);
   letter-spacing: var(--letter-spacing-button);
+  font-weight: 500;
 }
 
 .nav-link::after {
@@ -939,11 +940,6 @@ nav::before {
   width: 100%;
 }
 
-/* First feature row should have less top padding */
-.feature-section .feature-row:first-of-type {
-  padding-top: 3rem;
-}
-
 .feature-section .section-heading::after {
   content: none;
 }
@@ -951,12 +947,14 @@ nav::before {
 .feature-row {
   display: flex;
   align-items: center;
-  padding: 6rem 5rem;
+  padding: 2rem 4rem 2rem;
   position: relative;
-  max-width: 1400px;
-  margin: 0 auto;
-  gap: 6rem;
-  border-radius: 8px;
+  max-width: calc(100% - 40px);
+  margin: 2vh auto;
+  gap: 5rem;
+  border-radius: var(--border-radius);
+  background: none;
+  border: none;
 }
 
 .feature-row:not(:last-child) {
@@ -968,13 +966,13 @@ nav::before {
 }
 
 .content-half {
-  flex: 0 0 42%;
+  flex: 0 0 50%;
   padding: 0;
   max-width: 520px;
 }
 
 .media-half {
-  flex: 0 0 58%;
+  flex: 0 0 50%;
   padding: 0;
   position: relative;
 }
@@ -1006,13 +1004,22 @@ nav::before {
   position: relative;
   border-radius: var(--border-radius);
   overflow: hidden;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
 }
 
-.media-container video,
 .media-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.media-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
 }
 
@@ -1138,19 +1145,12 @@ nav::before {
   padding: 2rem 4rem 2rem;
   max-width: calc(100% - 40px);
   gap: 5rem;
+  background: none;
+  border: none;
 }
 
 .section--import .media-container {
-  border-radius: var(--border-radius);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
   margin: 0;
-  overflow: hidden;
-  transform: perspective(1000px) rotateY(-2deg);
-  transition: transform 0.5s ease;
-}
-
-.section--import .media-container:hover {
-  transform: perspective(1000px) rotateY(0deg);
 }
 
 .section--import .content-half h3 {
@@ -1804,7 +1804,6 @@ nav::before {
   text-decoration: none;
 }
 
-/* Updated CTA button styling */
 .button--cta {
   background: var(--color-title);
   padding: 12px 24px;
@@ -1932,9 +1931,9 @@ nav::before {
 .button--cta {
   background: var(--color-title);
   padding: 16px 32px;
-  font-size: 1.2rem;
+  font-size: var(--text-sm);
   border-radius: var(--border-radius);
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 /* Add a mobile menu button since the nav links are hidden */
@@ -2282,4 +2281,42 @@ a.signup-button:hover {
     position: relative !important;
     z-index: 100 !important;
   }
+}
+
+/* Video unmute button styling */
+.media-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.unmute-button {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  z-index: 10;
+}
+
+.unmute-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.unmute-button.unmuted svg {
+  /* Shows volume-on icon */
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+
+.unmute-button.unmuted line {
+  display: none;
 }
