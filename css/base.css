@@ -2098,10 +2098,13 @@ nav::before {
   min-height: 140vh;
 }
 
-/* Make individual grid items larger with adjusted aspect ratio */
 .section--themes .grid__item {
-  aspect-ratio: 1.3;
-  min-height: 220px;
+  aspect-ratio: 16/9;
+  min-height: 180px;
+  min-width: calc(
+    180px * (16 / 9)
+  ); /* the height was off without defining min width explicitly */
+  width: 100%; /* Ensure it fills the grid cell */
 }
 
 /* Add a subtle hover effect for better engagement */
