@@ -448,11 +448,27 @@ const handleResize = () => {
   });
 };
 
-// Preload images, initialize smooth scrolling, apply scroll-triggered animations, and remove loading class from body
-preloadImages(".grid__item-inner").then(() => {
-  initSmoothScrolling();
-  initIntroAnimation();
-  handleResize(); // Add the resize handler
-  scroll();
-  document.body.classList.remove("loading");
-});
+const sequentialImageLoading = () => {
+  // First phase: Load only intro and precording section images
+  const prioritySelector =
+    ".section--intro .grid__item-inner, .section--precording .grid__item-inner";
+
+  preloadImages(prioritySelector).then(() => {
+    initSmoothScrolling();
+    initIntroAnimation();
+    handleResize();
+    scroll();
+
+    // Remove loading class to show initial content
+    document.body.classList.remove("loading");
+
+    // Second phase: After high-priority sections are shown, start loading the rest
+    setTimeout(() => {
+      const remainingImagesSelector =
+        ".section:not(.section--intro):not(.section--precording) .grid__item-inner";
+      preloadImages(remainingImagesSelector);
+    }, 100); // Small delay to prioritize rendering the visible content first
+  });
+};
+
+sequentialImageLoading();
